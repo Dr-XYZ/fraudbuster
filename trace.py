@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 INPUT_FILE = "reports.json"                  # 原始待查清單
 RESULT_JSON = "fraud_tracking_result.json"  # 累積追蹤歷史資料庫
 OUTPUT_CSV = "fraud_tracking_summary.csv"   # 供 Dashboard 讀取的完整 CSV
-BATCH_SIZE = 25                             # 每次執行上限筆數
+BATCH_SIZE = 100                            # 每次執行上限筆數
 
 FIRST_CHECK_DELAY_DAYS = 2  # 通報滿 2 天才進行首次檢查
 RECHECK_INTERVAL_DAYS = 1   # 仍在線者，距離上次檢查需間隔滿 1 天
