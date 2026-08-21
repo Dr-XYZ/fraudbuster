@@ -20,15 +20,12 @@ def parse_dt(dt_str):
     return None
 
 def main():
-    if not os.path.exists(CSV_FILE):
-        print(f"找不到 {CSV_FILE}")
-        return
-
     rows = []
-    with open(CSV_FILE, "r", encoding="utf-8-sig") as f:
-        reader = csv.DictReader(f)
-        for r in reader:
-            rows.append(r)
+    if os.path.exists(CSV_FILE):
+        with open(CSV_FILE, "r", encoding="utf-8-sig") as f:
+            reader = csv.DictReader(f)
+            for r in reader:
+                rows.append(r)
 
     total = len(rows)
     now = datetime.now()
@@ -75,11 +72,13 @@ def main():
         if t_rep and t_prog and t_prog >= t_rep:
             official_resp_hours.append((t_prog - t_rep).total_seconds() / 3600.0)
 
+    # 安全計算各項比率（避免除以零）
     removed = threads_counts.get("Removed", 0)
-    takedown_rate = (removed / total * 100) if total > 0 else 0
+    takedown_rate = (removed / total * 100) if total > 0 else 0.0
     confirmed = verdict_counts.get("已確認下架", 0)
-    meta_rate = (confirmed / notified_meta_count * 100) if notified_meta_count > 0 else 0
-    avg_resp = f"{statistics.mean(official_resp_hours):.1f} 小時" if official_resp_hours else "N/A"
+    meta_rate = (confirmed / notified_meta_count * 100) if notified_meta_count > 0 else 0.0
+    official_fraud_rate = (notified_meta_count / total * 100) if total > 0 else 0.0
+    avg_resp = f"{statistics.mean(official_resp_hours):.1f} 小時" if official_resp_hours else "尚無數據"
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -120,7 +119,7 @@ def main():
       </div>
       <div class="bg-slate-800 border border-slate-700 p-5 rounded-xl">
         <div class="text-slate-400 text-xs uppercase font-medium">官方判定詐騙率</div>
-        <div class="text-3xl font-extrabold text-purple-400 mt-2">{(notified_meta_count/total*100):.1f}%</div>
+        <div class="text-3xl font-extrabold text-purple-400 mt-2">{official_fraud_rate:.1f}%</div>
         <div class="text-xs text-slate-400 mt-1">通知 Meta {notified_meta_count} 筆</div>
       </div>
       <div class="bg-slate-800 border border-slate-700 p-5 rounded-xl">
@@ -134,11 +133,15 @@ def main():
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <div class="bg-slate-800 border border-slate-700 p-5 rounded-xl">
         <h3 class="font-semibold text-slate-200 mb-4">案件處置現況分佈</h3>
-        <div class="h-64 flex justify-center"><canvas id="verdictChart"></canvas></div>
+        <div class="h-64 flex justify-center items-center">
+          <canvas id="verdictChart"></canvas>
+        </div>
       </div>
       <div class="bg-slate-800 border border-slate-700 p-5 rounded-xl">
         <h3 class="font-semibold text-slate-200 mb-4">通報經過時間 (Aging) vs 下架率</h3>
-        <div class="h-64"><canvas id="agingChart"></canvas></div>
+        <div class="h-64">
+          <canvas id="agingChart"></canvas>
+        </div>
       </div>
     </div>
 
@@ -163,19 +166,27 @@ def main():
           <tbody class="divide-y divide-slate-700" id="tableBody">
 """
 
-    for r in rows:
-        v = r.get("takedown_verdict", "")
-        if "已確認下架" in v or "已下架" in v:
-            badge_class = "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
-        elif "仍存活" in v:
-            badge_class = "bg-rose-500/10 text-rose-400 border border-rose-500/20"
-        else:
-            badge_class = "bg-amber-500/10 text-amber-400 border border-amber-500/20"
+    if total == 0:
+        html_content += """
+            <tr>
+              <td colspan="6" class="p-8 text-center text-slate-400">
+                ⏳ 尚無已檢查資料（案件通報滿 2 天後系統將自動開始追蹤）
+              </td>
+            </tr>"""
+    else:
+        for r in rows:
+            v = r.get("takedown_verdict", "")
+            if "已確認下架" in v or "已下架" in v:
+                badge_class = "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
+            elif "仍存活" in v:
+                badge_class = "bg-rose-500/10 text-rose-400 border border-rose-500/20"
+            else:
+                badge_class = "bg-amber-500/10 text-amber-400 border border-amber-500/20"
 
-        th_status = r.get("threads_actual_status", "")
-        th_badge = "text-emerald-400" if th_status == "Removed" else "text-rose-400"
+            th_status = r.get("threads_actual_status", "")
+            th_badge = "text-emerald-400" if th_status == "Removed" else "text-rose-400"
 
-        html_content += f"""
+            html_content += f"""
             <tr class="hover:bg-slate-750 transition">
               <td class="p-3 font-medium text-slate-100">@{r.get('username','')}</td>
               <td class="p-3 text-slate-400">{r.get('reported_at','')}</td>
@@ -194,6 +205,10 @@ def main():
         for b in aging_buckets.values()
     ]
 
+    verdict_labels = list(verdict_counts.keys()) if verdict_counts else ["無資料"]
+    verdict_data = list(verdict_counts.values()) if verdict_counts else [1]
+    verdict_colors = ['#10b981', '#f43f5e', '#3b82f6', '#f59e0b', '#8b5cf6'] if verdict_counts else ['#475569']
+
     html_content += f"""
           </tbody>
         </table>
@@ -206,10 +221,10 @@ def main():
     new Chart(document.getElementById('verdictChart'), {{
       type: 'doughnut',
       data: {{
-        labels: {json.dumps(list(verdict_counts.keys()), ensure_ascii=False)},
+        labels: {json.dumps(verdict_labels, ensure_ascii=False)},
         datasets: [{{
-          data: {list(verdict_counts.values())},
-          backgroundColor: ['#10b981', '#f43f5e', '#3b82f6', '#f59e0b', '#8b5cf6'],
+          data: {verdict_data},
+          backgroundColor: {json.dumps(verdict_colors)},
           borderWidth: 0
         }}]
       }},
