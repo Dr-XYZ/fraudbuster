@@ -3,7 +3,7 @@ name: Track Fraud Reports & Deploy Webpage
 on:
   schedule:
     # 每 2 小時檢查是否有剛好滿 2 天或滿 1 天需要跑的案件
-    - cron: '0 */2 * * *'
+   #  - cron: '0 */2 * * *'
   workflow_dispatch:
 
 permissions:
