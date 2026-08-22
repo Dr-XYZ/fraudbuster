@@ -1,4 +1,4 @@
-name: Deploy Cloudflare Worker & Sync D1 Data
+name: Deploy Cloudflare Worker & GitHub Pages Redirect
 
 on:
   push:
@@ -6,10 +6,15 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  deploy:
+  deploy-worker:
     runs-on: ubuntu-latest
-    name: Sync D1 & Deploy Worker
+    name: Deploy Cloudflare Worker
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -28,3 +33,22 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+  deploy-pages:
+    runs-on: ubuntu-latest
+    name: Deploy Redirect Page to GitHub Pages
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
