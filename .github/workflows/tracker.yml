@@ -2,8 +2,7 @@ name: Track Fraud Reports & Deploy Webpage
 
 on:
   schedule:
-    # 每 2 小時檢查是否有剛好滿 2 天或滿 1 天需要跑的案件
-   #  - cron: '0 */2 * * *'
+    - cron: '0 */2 * * *' # 每 2 小時檢查一次
   workflow_dispatch:
 
 permissions:
@@ -36,16 +35,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Incremental Time-Gated Tracking
+      - name: Run Incremental Tracking
         run: |
           python trace.py
 
-      - name: Commit & Push Updated History
+      - name: Commit & Push Updated Database
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add fraud_tracking_result.json fraud_tracking_summary.csv || true
-          git commit -m "Auto update tracking history [skip ci]" || echo "No changes to commit"
+          git add tracking_db.json || true
+          git commit -m "Auto update tracking db [skip ci]" || echo "No changes"
           git push origin main || echo "Nothing to push"
 
       - name: Generate Web Dashboard
