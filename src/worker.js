@@ -3,7 +3,7 @@
 import { parseDt, formatDateStr, fetchFraudbusterStages, checkThreadsStatus } from './parser.js';
 import { renderDashboardHTML } from './dashboard.js';
 
-const BATCH_SIZE = 20; // 每次 Cron 執行最多處理 20 筆
+const BATCH_SIZE = 100; // 每次 Cron/手動執行最多處理 100 筆
 const FIRST_CHECK_DELAY_DAYS = 1; // 通報滿 2 天 (48h)
 const RECHECK_INTERVAL_DAYS = 1;  // 間隔滿 1 天 (24h)
 
