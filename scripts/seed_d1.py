@@ -13,7 +13,8 @@ import sys
 import os
 import json
 import argparse
-import requests
+import urllib.request
+import urllib.parse
 
 REPORTS_FILE = "reports.json"
 DB_FILE = "tracking_db.json"
@@ -123,18 +124,22 @@ def execute_d1_sql(account_id, database_id, token, sql_query, params=None):
         "Authorization": f"Bearer {token}",
         "Content-Type": "application/json"
     }
-    payload = {
+    payload = json.dumps({
         "sql": sql_query,
         "params": params or []
-    }
-    resp = requests.post(url, headers=headers, json=payload)
-    if resp.status_code == 200 and resp.json().get("success"):
-        return True, resp.json()
-    else:
-        return False, resp.text
+    }).encode("utf-8")
+    
+    req = urllib.request.Request(url, data=payload, headers=headers, method="POST")
+    try:
+        with urllib.request.urlopen(req) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            if resp.status == 200 and data.get("success"):
+                return True, data
+            return False, data
+    except Exception as e:
+        return False, str(e)
 
 def push_data_via_api(account_id, database_id, token):
-    # 確保 schema 表格存在
     create_tables = """
     CREATE TABLE IF NOT EXISTS reports (
         url TEXT PRIMARY KEY, username TEXT, case_id TEXT, reported_at TEXT
@@ -149,7 +154,6 @@ def push_data_via_api(account_id, database_id, token):
     """
     execute_d1_sql(account_id, database_id, token, create_tables)
 
-    # 1. 匯入 reports.json
     if os.path.exists(REPORTS_FILE):
         with open(REPORTS_FILE, "r", encoding="utf-8") as f:
             reports_data = json.load(f)
@@ -163,7 +167,6 @@ def push_data_via_api(account_id, database_id, token):
             if ok: count += 1
         print(f"✅ 成功寫入 {count}/{len(items)} 筆 reports！")
 
-    # 2. 匯入 tracking_db.json
     if os.path.exists(DB_FILE):
         with open(DB_FILE, "r", encoding="utf-8") as f:
             db_data = json.load(f)
@@ -209,7 +212,6 @@ def main():
 
     args = parser.parse_args()
 
-    # 預設總是產出 seed_data.sql
     generate_sql_file()
 
     if args.account_id and args.database_id and args.token:
