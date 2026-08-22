@@ -199,17 +199,17 @@ export default {
       });
     }
 
-    // 3. API: 手動觸發一次增量追蹤
-    if (url.pathname === "/api/trigger" && request.method === "POST") {
+    // 3. API: 手動觸發一次增量追蹤 (支援 GET/POST 方便隨時手動點擊或 API 呼叫)
+    if (url.pathname === "/api/trigger") {
       const authHeader = request.headers.get("Authorization");
       if (env.ADMIN_KEY && authHeader !== `Bearer ${env.ADMIN_KEY}`) {
         return new Response(JSON.stringify({ error: "Unauthorized" }), { status: 401 });
       }
 
-      ctx.waitUntil(runTrackingBatch(env));
+      const result = await runTrackingBatch(env);
 
-      return new Response(JSON.stringify({ message: "Tracking batch triggered in background" }), {
-        headers: { "Content-Type": "application/json" }
+      return new Response(JSON.stringify({ message: "Tracking batch completed successfully", result }, null, 2), {
+        headers: { "Content-Type": "application/json; charset=UTF-8" }
       });
     }
 
