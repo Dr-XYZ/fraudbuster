@@ -33529,11 +33529,6 @@
     "case_id": "21f47aace9d35ad40a70acc8",
     "risk": "中"
   },
-  "https://www.threads.net/@ackerman_pauline.meqkkbv": {
-    "reported_at": "2026-08-22 14:41:49",
-    "case_id": "b5e682f046b431f7ecbc402a",
-    "risk": "中"
-  },
   "https://www.threads.net/@camel.7492173": {
     "reported_at": "2026-08-22 14:41:52",
     "case_id": "40b30b0b9c2f2138c79d48c4",
@@ -34974,11 +34969,6 @@
     "risk": "中",
     "reported_at": "2026-08-22T11:27:05.629Z"
   },
-  "https://line.me/ti/p/vb8887": {
-    "caseId": "a5e232e8653e93f619e5a155",
-    "risk": "中",
-    "reported_at": "2026-08-22T11:27:08.291Z"
-  },
   "https://www.threads.net/@hhvnbg4": {
     "caseId": "e3ac84407a83bc65b69bb534",
     "risk": "中",
@@ -34988,61 +34978,6 @@
     "caseId": "7979aa4e1c41e6da86156471",
     "risk": "中",
     "reported_at": "2026-08-22T11:27:11.682Z"
-  },
-  "https://line.me/ti/p/kak586": {
-    "caseId": "ff8a4f97f1413bd2b70fa967",
-    "risk": "中",
-    "reported_at": "2026-08-22T11:27:14.271Z"
-  },
-  "https://line.me/ti/p/76894677": {
-    "caseId": "d7f4fff20a2c46d61c90fcfe",
-    "risk": "中",
-    "reported_at": "2026-08-22T11:27:14.286Z"
-  },
-  "https://line.me/ti/p/lsh9980": {
-    "caseId": "6db2527c1e8a7c22ebf36cca",
-    "risk": "中",
-    "reported_at": "2026-08-22T11:27:14.340Z"
-  },
-  "https://line.me/ti/p/se7556": {
-    "caseId": "aa62c3675fbf5155eda30076",
-    "risk": "中",
-    "reported_at": "2026-08-22T11:27:16.971Z"
-  },
-  "https://line.me/ti/p/k66986": {
-    "caseId": "e8af348acfe708eeccdec093",
-    "risk": "中",
-    "reported_at": "2026-08-22T11:27:16.980Z"
-  },
-  "https://line.me/ti/p/ww66889900": {
-    "caseId": "88b182f99f13d11eec84ef8d",
-    "risk": "中",
-    "reported_at": "2026-08-22T11:27:16.983Z"
-  },
-  "https://line.me/ti/p/dm578": {
-    "caseId": "1770bf396788eb39db082aac",
-    "risk": "中",
-    "reported_at": "2026-08-22T11:27:19.604Z"
-  },
-  "https://line.me/ti/p/1996.88": {
-    "caseId": "8fd0bfff307f23a441a39ea9",
-    "risk": "中",
-    "reported_at": "2026-08-22T11:27:19.696Z"
-  },
-  "https://line.me/ti/p/ca7888": {
-    "caseId": "74d5862117f30d8157c5f88c",
-    "risk": "中",
-    "reported_at": "2026-08-22T11:27:19.704Z"
-  },
-  "https://line.me/ti/p/mm66330": {
-    "caseId": "d00df39780935f52b6f5c60a",
-    "risk": "中",
-    "reported_at": "2026-08-22T11:27:22.318Z"
-  },
-  "https://line.me/ti/p/dn1363": {
-    "caseId": "e766ca2e58ae3da8909883e3",
-    "risk": "中",
-    "reported_at": "2026-08-22T11:27:22.325Z"
   },
   "https://www.threads.net/@vg53732": {
     "caseId": "07db1473319ee73af8c03bfd",
