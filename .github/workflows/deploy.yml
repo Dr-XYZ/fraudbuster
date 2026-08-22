@@ -23,14 +23,6 @@ jobs:
         run: |
           python3 scripts/seed_d1.py --export-sql
 
-      - name: Sync Reports & Database to Cloudflare D1
-        continue-on-error: true
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: d1 execute fraudbuster-db --remote --file=seed_data.sql -y
-
       - name: Deploy Worker to Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
         with:
