@@ -4,7 +4,7 @@
 1. **高效能 SQL 儲存 (D1)**：使用 Cloudflare D1 SQLite 資料庫維護 `reports` 與 `cases` 表格，支援結構化查詢與 Batch 操作。
 2. **舊格式資料轉碼**：已內建工具自動將舊有 `reports.json` (7,789 筆) 與 `tracking_db.json` (1,600 筆歷程) 轉換為 SQL 腳本。
 3. **即時動態儀表板**：造訪 Worker 網址時直接由 Edge 端進行 SQL 統計並渲染 Tailwind CSS & Chart.js 儀表板。
-4. **自動化 Cron 排程**：每 2 小時自動執行增量爬取（檢測打詐通報網歷程階段與 Threads 實況狀態），並自動寫入 Cloudflare D1。
+4. **自動化 Cron 排程**：每 20 分鐘自動執行增量爬取（檢測打詐通報網歷程階段與 Threads 實況狀態），並自動寫入 Cloudflare D1。
 
 ---
 
