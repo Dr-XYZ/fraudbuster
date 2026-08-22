@@ -11992,5 +11992,3993 @@
       }
     ],
     "threads_url": "https://www.threads.net/@kangaroo.5266761"
+  },
+  "https://www.threads.net/@lion.1295774": {
+    "username": "lion.1295774",
+    "case_id": "4ace4cdde9afa9fc0ab4679f",
+    "reported_at": "2026-08-19 20:23:19",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=4ace4cdde9afa9fc0ab4679f",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:23",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:59",
+        "desc": "網頁已消失。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@lion.1295774"
+  },
+  "https://www.threads.net/@owl.92374780": {
+    "username": "owl.92374780",
+    "case_id": "d597036201d05d1f438a6099",
+    "reported_at": "2026-08-19 20:23:25",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=d597036201d05d1f438a6099",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:23",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:23",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:23",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@owl.92374780"
+  },
+  "https://www.threads.net/@yinf42": {
+    "username": "yinf42",
+    "case_id": "f7c7dbd34eee5dd90bb1264c",
+    "reported_at": "2026-08-19 20:23:31",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=f7c7dbd34eee5dd90bb1264c",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:23",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:23",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:24",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@yinf42"
+  },
+  "https://www.threads.net/@hgfqw58049522026": {
+    "username": "hgfqw58049522026",
+    "case_id": "dd00b77d79c347105f7174cd",
+    "reported_at": "2026-08-19 20:23:40",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=dd00b77d79c347105f7174cd",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:23",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:59",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:32",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@hgfqw58049522026"
+  },
+  "https://www.threads.net/@gdc16428": {
+    "username": "gdc16428",
+    "case_id": "0de15b853c5cad45a4cd96a4",
+    "reported_at": "2026-08-19 20:23:47",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=0de15b853c5cad45a4cd96a4",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:23",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:59",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:31",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@gdc16428"
+  },
+  "https://www.threads.net/@sheep.7195764": {
+    "username": "sheep.7195764",
+    "case_id": "7faf62472f6f516feb156bea",
+    "reported_at": "2026-08-19 20:23:55",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=7faf62472f6f516feb156bea",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:23",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:23",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:24",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@sheep.7195764"
+  },
+  "https://www.threads.net/@dragon.4765900": {
+    "username": "dragon.4765900",
+    "case_id": "b934954129e98f823873f0f2",
+    "reported_at": "2026-08-19 20:24:03",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=b934954129e98f823873f0f2",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:23",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:59",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:31",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@dragon.4765900"
+  },
+  "https://www.threads.net/@dragon.7999459": {
+    "username": "dragon.7999459",
+    "case_id": "1cec3569ecd448224b405d1a",
+    "reported_at": "2026-08-19 20:24:11",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=1cec3569ecd448224b405d1a",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:24",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:59",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:31",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@dragon.7999459"
+  },
+  "https://www.threads.net/@fei97489": {
+    "username": "fei97489",
+    "case_id": "1ab366eb9645d1a3a05ec077",
+    "reported_at": "2026-08-19 20:24:18",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=1ab366eb9645d1a3a05ec077",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:24",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:31",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@fei97489"
+  },
+  "https://www.threads.net/@dvgh1797": {
+    "username": "dvgh1797",
+    "case_id": "9528ad637b0270c325aa4085",
+    "reported_at": "2026-08-19 20:24:24",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=9528ad637b0270c325aa4085",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:24",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:24",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:29",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@dvgh1797"
+  },
+  "https://www.threads.net/@deer.1965612": {
+    "username": "deer.1965612",
+    "case_id": "f4cf14ca1e1b6fff38927489",
+    "reported_at": "2026-08-19 20:24:29",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=f4cf14ca1e1b6fff38927489",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:24",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:31",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@deer.1965612"
+  },
+  "https://www.threads.net/@yu82592": {
+    "username": "yu82592",
+    "case_id": "69031d21dc2f5cc2bbbb0721",
+    "reported_at": "2026-08-19 20:24:35",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=69031d21dc2f5cc2bbbb0721",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:24",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:31",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@yu82592"
+  },
+  "https://www.threads.net/@koala.2574497": {
+    "username": "koala.2574497",
+    "case_id": "d225b3fa83443529611395e6",
+    "reported_at": "2026-08-19 20:24:42",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=d225b3fa83443529611395e6",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:24",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:24",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:28",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@koala.2574497"
+  },
+  "https://www.threads.net/@iguana.63096180": {
+    "username": "iguana.63096180",
+    "case_id": "f7129d2d26e9e48220a1dfc9",
+    "reported_at": "2026-08-19 20:24:51",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=f7129d2d26e9e48220a1dfc9",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:24",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:24",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:25",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@iguana.63096180"
+  },
+  "https://www.threads.net/@vhu8195": {
+    "username": "vhu8195",
+    "case_id": "630dbc13228781247e228992",
+    "reported_at": "2026-08-19 20:24:58",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=630dbc13228781247e228992",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:24",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:24",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:28",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@vhu8195"
+  },
+  "https://www.threads.net/@qiqu821": {
+    "username": "qiqu821",
+    "case_id": "b5bacf72a293b256d39159ed",
+    "reported_at": "2026-08-19 20:25:06",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=b5bacf72a293b256d39159ed",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:25",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:25",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:25",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@qiqu821"
+  },
+  "https://www.threads.net/@clairedavisch843": {
+    "username": "clairedavisch843",
+    "case_id": "ec82357cf0355f59d6520d2a",
+    "reported_at": "2026-08-19 20:25:15",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=ec82357cf0355f59d6520d2a",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:25",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  15:38",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@clairedavisch843"
+  },
+  "https://www.threads.net/@squirrel.70266053": {
+    "username": "squirrel.70266053",
+    "case_id": "f09b1a10b288065166bfb158",
+    "reported_at": "2026-08-19 20:25:22",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=f09b1a10b288065166bfb158",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:25",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:53",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:30",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@squirrel.70266053"
+  },
+  "https://www.threads.net/@hawk.9113788": {
+    "username": "hawk.9113788",
+    "case_id": "001fc0fd6edce378f37f7850",
+    "reported_at": "2026-08-19 20:25:29",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=001fc0fd6edce378f37f7850",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:25",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:25",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:27",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@hawk.9113788"
+  },
+  "https://www.threads.net/@lingzhen6979": {
+    "username": "lingzhen6979",
+    "case_id": "d2ab9d5fb1ea364b65e979de",
+    "reported_at": "2026-08-19 20:25:34",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=d2ab9d5fb1ea364b65e979de",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:25",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:25",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:27",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@lingzhen6979"
+  },
+  "https://www.threads.net/@elk.5505277": {
+    "username": "elk.5505277",
+    "case_id": "35316aafb326f5352df8530b",
+    "reported_at": "2026-08-19 20:25:40",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=35316aafb326f5352df8530b",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:25",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:25",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:26",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@elk.5505277"
+  },
+  "https://www.threads.net/@all_jby1": {
+    "username": "all_jby1",
+    "case_id": "7704391c58d33e4fd29f8e9c",
+    "reported_at": "2026-08-19 20:25:47",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=7704391c58d33e4fd29f8e9c",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:25",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:25",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:26",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@all_jby1"
+  },
+  "https://www.threads.net/@chimeng7132": {
+    "username": "chimeng7132",
+    "case_id": "688a2176cdd7e4f948b89ba4",
+    "reported_at": "2026-08-19 20:25:55",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=688a2176cdd7e4f948b89ba4",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:25",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  22:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  22:16",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@chimeng7132"
+  },
+  "https://www.threads.net/@wujiaxiang53": {
+    "username": "wujiaxiang53",
+    "case_id": "a8cac533aab29a876a56e28a",
+    "reported_at": "2026-08-19 20:26:02",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=a8cac533aab29a876a56e28a",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:25",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:29",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@wujiaxiang53"
+  },
+  "https://www.threads.net/@unicorn.4747586": {
+    "username": "unicorn.4747586",
+    "case_id": "914854e16d92d5bc73183554",
+    "reported_at": "2026-08-19 20:26:10",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=914854e16d92d5bc73183554",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:26",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:26",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:27",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@unicorn.4747586"
+  },
+  "https://www.threads.net/@guchhvvj": {
+    "username": "guchhvvj",
+    "case_id": "3de35b22287a9dcf622e305a",
+    "reported_at": "2026-08-19 20:26:17",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=3de35b22287a9dcf622e305a",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:26",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:26",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:26",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@guchhvvj"
+  },
+  "https://www.threads.net/@dragon.3938956": {
+    "username": "dragon.3938956",
+    "case_id": "70115742d619e2eee2ad75df",
+    "reported_at": "2026-08-19 20:26:25",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=70115742d619e2eee2ad75df",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:26",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:52",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:29",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@dragon.3938956"
+  },
+  "https://www.threads.net/@basiru58920": {
+    "username": "basiru58920",
+    "case_id": "ecb8fb36dfd453a4be715e65",
+    "reported_at": "2026-08-19 20:26:32",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=ecb8fb36dfd453a4be715e65",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:26",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:06",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:29",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@basiru58920"
+  },
+  "https://www.threads.net/@cheetah.4013475": {
+    "username": "cheetah.4013475",
+    "case_id": "083b1b7b641fc278f095b517",
+    "reported_at": "2026-08-19 20:26:40",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=083b1b7b641fc278f095b517",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:26",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:01",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:29",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@cheetah.4013475"
+  },
+  "https://www.threads.net/@leopard.11253777": {
+    "username": "leopard.11253777",
+    "case_id": "bf28872aa50c1ab0484af5fe",
+    "reported_at": "2026-08-19 20:31:55",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=bf28872aa50c1ab0484af5fe",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:31",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:31",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:32",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@leopard.11253777"
+  },
+  "https://www.threads.net/@minmin72465": {
+    "username": "minmin72465",
+    "case_id": "c6f226bded7f73995f240939",
+    "reported_at": "2026-08-19 20:32:03",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=c6f226bded7f73995f240939",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:32",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  22:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  08:32",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@minmin72465"
+  },
+  "https://www.threads.net/@camel.4680418": {
+    "username": "camel.4680418",
+    "case_id": "185e591c97994bb4bfcced73",
+    "reported_at": "2026-08-19 20:32:15",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=185e591c97994bb4bfcced73",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:32",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:32",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:32",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@camel.4680418"
+  },
+  "https://www.threads.net/@oconnell.matteo": {
+    "username": "oconnell.matteo",
+    "case_id": "7a8708574f6dd6bf53e9f9b0",
+    "reported_at": "2026-08-19 20:32:23",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=7a8708574f6dd6bf53e9f9b0",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:32",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  22:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  22:15",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@oconnell.matteo"
+  },
+  "https://www.threads.net/@duck.7269206": {
+    "username": "duck.7269206",
+    "case_id": "a204d9fe1254ed82ef2dd930",
+    "reported_at": "2026-08-19 20:32:31",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=a204d9fe1254ed82ef2dd930",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:32",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:32",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:33",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@duck.7269206"
+  },
+  "https://www.threads.net/@badger.64007718": {
+    "username": "badger.64007718",
+    "case_id": "6b0f609e2df1f3ff6b288193",
+    "reported_at": "2026-08-19 20:32:39",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=6b0f609e2df1f3ff6b288193",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:32",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:52",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:28",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@badger.64007718"
+  },
+  "https://www.threads.net/@unicorn.8488276": {
+    "username": "unicorn.8488276",
+    "case_id": "ffcec60a82afc48bff31ca71",
+    "reported_at": "2026-08-19 20:32:47",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=ffcec60a82afc48bff31ca71",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:32",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:32",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:33",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@unicorn.8488276"
+  },
+  "https://www.threads.net/@panther.8839639": {
+    "username": "panther.8839639",
+    "case_id": "4c4f1a6b996b854641a4fc89",
+    "reported_at": "2026-08-19 20:32:56",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=4c4f1a6b996b854641a4fc89",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:32",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:32",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:33",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@panther.8839639"
+  },
+  "https://www.threads.net/@badger.20762408": {
+    "username": "badger.20762408",
+    "case_id": "d7207ba2e6a1867fed454d97",
+    "reported_at": "2026-08-19 20:33:04",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=d7207ba2e6a1867fed454d97",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:33",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:01",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:28",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@badger.20762408"
+  },
+  "https://www.threads.net/@penguin.440264": {
+    "username": "penguin.440264",
+    "case_id": "1df6b92a46e9d5596c91188c",
+    "reported_at": "2026-08-19 20:33:14",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=1df6b92a46e9d5596c91188c",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:33",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:33",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:33",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@penguin.440264"
+  },
+  "https://www.threads.net/@gazelle.7435107": {
+    "username": "gazelle.7435107",
+    "case_id": "5e3104efdb85e1c62b460e65",
+    "reported_at": "2026-08-19 20:33:23",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=5e3104efdb85e1c62b460e65",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:33",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:33",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:35",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@gazelle.7435107"
+  },
+  "https://www.threads.net/@sara8397588": {
+    "username": "sara8397588",
+    "case_id": "9081735a198a20ce43241beb",
+    "reported_at": "2026-08-19 20:33:32",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=9081735a198a20ce43241beb",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:33",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:33",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:34",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@sara8397588"
+  },
+  "https://www.threads.net/@dragon.5693798": {
+    "username": "dragon.5693798",
+    "case_id": "ed3ce1a9711fe0689ef04052",
+    "reported_at": "2026-08-19 20:33:41",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=ed3ce1a9711fe0689ef04052",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:33",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:33",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:34",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@dragon.5693798"
+  },
+  "https://www.threads.net/@leopard.8371899": {
+    "username": "leopard.8371899",
+    "case_id": "a687fc4b4eff4c9fb61d6731",
+    "reported_at": "2026-08-19 20:33:49",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=a687fc4b4eff4c9fb61d6731",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:33",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:33",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:34",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@leopard.8371899"
+  },
+  "https://www.threads.net/@bypassemilie93": {
+    "username": "bypassemilie93",
+    "case_id": "3362f967c7e79c6ef645915c",
+    "reported_at": "2026-08-19 20:33:57",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=3362f967c7e79c6ef645915c",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:33",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:01",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:28",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@bypassemilie93"
+  },
+  "https://www.threads.net/@dinosaur.1356729": {
+    "username": "dinosaur.1356729",
+    "case_id": "ecc5b50683c79728846750e6",
+    "reported_at": "2026-08-19 20:34:05",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=ecc5b50683c79728846750e6",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:34",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:34",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:34",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@dinosaur.1356729"
+  },
+  "https://www.threads.net/@hawk.2740075": {
+    "username": "hawk.2740075",
+    "case_id": "6ba60ab9702e4024846f5a4c",
+    "reported_at": "2026-08-19 20:34:13",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=6ba60ab9702e4024846f5a4c",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:34",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:34",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:34",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@hawk.2740075"
+  },
+  "https://www.threads.net/@gjoni7173": {
+    "username": "gjoni7173",
+    "case_id": "83936e25f6a0b77944bd21ba",
+    "reported_at": "2026-08-19 20:34:21",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=83936e25f6a0b77944bd21ba",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:34",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  22:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  08:31",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@gjoni7173"
+  },
+  "https://www.threads.net/@dsfh5345": {
+    "username": "dsfh5345",
+    "case_id": "2d659270fd4d0031cadbed53",
+    "reported_at": "2026-08-19 20:34:29",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=2d659270fd4d0031cadbed53",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:34",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  22:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  08:31",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@dsfh5345"
+  },
+  "https://www.threads.net/@luckykbg": {
+    "username": "luckykbg",
+    "case_id": "28c3c872aab405d155a4aace",
+    "reported_at": "2026-08-19 20:34:40",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=28c3c872aab405d155a4aace",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:34",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  22:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  08:31",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@luckykbg"
+  },
+  "https://www.threads.net/@horse.92178801": {
+    "username": "horse.92178801",
+    "case_id": "73ed18bde1702dff6c79c370",
+    "reported_at": "2026-08-19 20:34:48",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=73ed18bde1702dff6c79c370",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:34",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:01",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:28",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@horse.92178801"
+  },
+  "https://www.threads.net/@jellyfish.56625712": {
+    "username": "jellyfish.56625712",
+    "case_id": "2858368ece6fc322b8e48c44",
+    "reported_at": "2026-08-19 20:34:56",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=2858368ece6fc322b8e48c44",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:34",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:34",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:35",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@jellyfish.56625712"
+  },
+  "https://www.threads.net/@badger.1748785": {
+    "username": "badger.1748785",
+    "case_id": "41a8086087cadadbf1d68dca",
+    "reported_at": "2026-08-19 20:35:04",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=41a8086087cadadbf1d68dca",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:35",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:35",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:35",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@badger.1748785"
+  },
+  "https://www.threads.net/@vankoch39618": {
+    "username": "vankoch39618",
+    "case_id": "6eb6d14066599d17dd50aca5",
+    "reported_at": "2026-08-19 20:35:13",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=6eb6d14066599d17dd50aca5",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:35",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  22:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  22:13",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@vankoch39618"
+  },
+  "https://www.threads.net/@macrichards529": {
+    "username": "macrichards529",
+    "case_id": "b5dcf3b333cf4a716532da16",
+    "reported_at": "2026-08-19 20:35:20",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=b5dcf3b333cf4a716532da16",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:35",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  22:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  08:38",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@macrichards529"
+  },
+  "https://www.threads.net/@penguin.30056510": {
+    "username": "penguin.30056510",
+    "case_id": "bd7dd53bd4cfec1738883ad2",
+    "reported_at": "2026-08-19 20:35:28",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=bd7dd53bd4cfec1738883ad2",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:35",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:52",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:27",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@penguin.30056510"
+  },
+  "https://www.threads.net/@huanglele1928": {
+    "username": "huanglele1928",
+    "case_id": "8e27a464889f58afb46e6e9b",
+    "reported_at": "2026-08-19 20:35:36",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=8e27a464889f58afb46e6e9b",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:35",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:01",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:27",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@huanglele1928"
+  },
+  "https://www.threads.net/@platypus.8718758": {
+    "username": "platypus.8718758",
+    "case_id": "840d3c754bd0ee0bede7e579",
+    "reported_at": "2026-08-19 20:35:45",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=840d3c754bd0ee0bede7e579",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:35",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:35",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:36",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@platypus.8718758"
+  },
+  "https://www.threads.net/@camel.3949809": {
+    "username": "camel.3949809",
+    "case_id": "147d37b61a4149ed65249b09",
+    "reported_at": "2026-08-19 20:35:53",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=147d37b61a4149ed65249b09",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:35",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:52",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:27",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@camel.3949809"
+  },
+  "https://www.threads.net/@rhino.95147484": {
+    "username": "rhino.95147484",
+    "case_id": "4f961aaa0d980236422ec11b",
+    "reported_at": "2026-08-19 20:36:01",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=4f961aaa0d980236422ec11b",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:35",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:02",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:27",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@rhino.95147484"
+  },
+  "https://www.threads.net/@unicorn.4080977": {
+    "username": "unicorn.4080977",
+    "case_id": "c57eec38dcb8f92b719f5a45",
+    "reported_at": "2026-08-19 20:36:12",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=c57eec38dcb8f92b719f5a45",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:36",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:52",
+        "desc": "網頁已消失。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@unicorn.4080977"
+  },
+  "https://www.threads.net/@a3dfhk48dfgj": {
+    "username": "a3dfhk48dfgj",
+    "case_id": "f2bb05c4d538941fc2c8a079",
+    "reported_at": "2026-08-19 20:36:20",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=f2bb05c4d538941fc2c8a079",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:36",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  22:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  08:38",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@a3dfhk48dfgj"
+  },
+  "https://www.threads.net/@fiol62538": {
+    "username": "fiol62538",
+    "case_id": "4bd6a5a431384bf63eb6e501",
+    "reported_at": "2026-08-19 20:36:29",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=4bd6a5a431384bf63eb6e501",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:36",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:36",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:37",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@fiol62538"
+  },
+  "https://www.threads.net/@duck.4659413": {
+    "username": "duck.4659413",
+    "case_id": "1e01e7172612cc58b6dfc09f",
+    "reported_at": "2026-08-19 20:36:36",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=1e01e7172612cc58b6dfc09f",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:36",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:36",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:37",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@duck.4659413"
+  },
+  "https://www.threads.net/@jellyfish.3604923": {
+    "username": "jellyfish.3604923",
+    "case_id": "946c6174313d7d52fbee8f80",
+    "reported_at": "2026-08-19 20:36:46",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=946c6174313d7d52fbee8f80",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:36",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:36",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:37",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@jellyfish.3604923"
+  },
+  "https://www.threads.net/@d124385": {
+    "username": "d124385",
+    "case_id": "fa50581dde6890692c0e4e44",
+    "reported_at": "2026-08-19 20:36:53",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=fa50581dde6890692c0e4e44",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:36",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:36",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:37",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@d124385"
+  },
+  "https://www.threads.net/@horse.76794371": {
+    "username": "horse.76794371",
+    "case_id": "4e8a5bd7cd5e24889c98fc36",
+    "reported_at": "2026-08-19 20:37:01",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=4e8a5bd7cd5e24889c98fc36",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:36",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:02",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:26",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@horse.76794371"
+  },
+  "https://www.threads.net/@reindeer.15465750": {
+    "username": "reindeer.15465750",
+    "case_id": "b40b5ef7438a83595fab8ae6",
+    "reported_at": "2026-08-19 20:37:09",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=b40b5ef7438a83595fab8ae6",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:37",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:52",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:26",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@reindeer.15465750"
+  },
+  "https://www.threads.net/@reindeer.5883375": {
+    "username": "reindeer.5883375",
+    "case_id": "ec7455b360d8d40592734f04",
+    "reported_at": "2026-08-19 20:37:17",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=ec7455b360d8d40592734f04",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:37",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:02",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:26",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@reindeer.5883375"
+  },
+  "https://www.threads.net/@huanmeituo": {
+    "username": "huanmeituo",
+    "case_id": "6833f83ceded416f6f11aa3d",
+    "reported_at": "2026-08-19 20:37:25",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=6833f83ceded416f6f11aa3d",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:37",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:37",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:38",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@huanmeituo"
+  },
+  "https://www.threads.net/@chameleon.4161532": {
+    "username": "chameleon.4161532",
+    "case_id": "f6ce2727bd4d34a76a57029c",
+    "reported_at": "2026-08-19 20:37:33",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=f6ce2727bd4d34a76a57029c",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:37",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:37",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:38",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@chameleon.4161532"
+  },
+  "https://www.threads.net/@ff678398": {
+    "username": "ff678398",
+    "case_id": "454601f32aab68a85acaf686",
+    "reported_at": "2026-08-19 20:39:09",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=454601f32aab68a85acaf686",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:39",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:39",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:41",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@ff678398"
+  },
+  "https://www.threads.net/@squirrel.3877147": {
+    "username": "squirrel.3877147",
+    "case_id": "8fc9b73446e75fac665e26a5",
+    "reported_at": "2026-08-19 20:39:17",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=8fc9b73446e75fac665e26a5",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:39",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:39",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:39",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@squirrel.3877147"
+  },
+  "https://www.threads.net/@quail.22265752": {
+    "username": "quail.22265752",
+    "case_id": "0ba19f6579dd33f3aa97a346",
+    "reported_at": "2026-08-19 20:39:25",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=0ba19f6579dd33f3aa97a346",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:39",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:39",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:39",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@quail.22265752"
+  },
+  "https://www.threads.net/@gracesmivx53": {
+    "username": "gracesmivx53",
+    "case_id": "6e08dbfe4930a261e63d8844",
+    "reported_at": "2026-08-19 20:39:33",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=6e08dbfe4930a261e63d8844",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:39",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:02",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:26",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@gracesmivx53"
+  },
+  "https://www.threads.net/@hamster.5702733": {
+    "username": "hamster.5702733",
+    "case_id": "e150d74f243ddc87050b0b92",
+    "reported_at": "2026-08-19 20:39:40",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=e150d74f243ddc87050b0b92",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:39",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:39",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:40",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@hamster.5702733"
+  },
+  "https://www.threads.net/@panther.97576620": {
+    "username": "panther.97576620",
+    "case_id": "3370b1d5799addbf3c043513",
+    "reported_at": "2026-08-19 20:39:47",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=3370b1d5799addbf3c043513",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:39",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:39",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:41",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@panther.97576620"
+  },
+  "https://www.threads.net/@alligator.5952894": {
+    "username": "alligator.5952894",
+    "case_id": "44e34e24e8d0f1f94e34f299",
+    "reported_at": "2026-08-19 20:39:54",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=44e34e24e8d0f1f94e34f299",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:39",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:39",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:40",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@alligator.5952894"
+  },
+  "https://www.threads.net/@otter.1369599": {
+    "username": "otter.1369599",
+    "case_id": "d222fde398d12ae4554a86f7",
+    "reported_at": "2026-08-19 20:40:01",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=d222fde398d12ae4554a86f7",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:39",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:40",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:40",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@otter.1369599"
+  },
+  "https://www.threads.net/@bear.9395701": {
+    "username": "bear.9395701",
+    "case_id": "7ae2653900b05fecab1304c5",
+    "reported_at": "2026-08-19 20:40:09",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=7ae2653900b05fecab1304c5",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:40",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:51",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:25",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@bear.9395701"
+  },
+  "https://www.threads.net/@bat.5294475": {
+    "username": "bat.5294475",
+    "case_id": "235ddd4627b0286489ff14c7",
+    "reported_at": "2026-08-19 20:40:16",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=235ddd4627b0286489ff14c7",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:40",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:40",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:40",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@bat.5294475"
+  },
+  "https://www.threads.net/@horse.68276626": {
+    "username": "horse.68276626",
+    "case_id": "92aef3ff958d254b5244b772",
+    "reported_at": "2026-08-19 20:40:23",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=92aef3ff958d254b5244b772",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:40",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:02",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:25",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@horse.68276626"
+  },
+  "https://www.threads.net/@reindeer.2551623": {
+    "username": "reindeer.2551623",
+    "case_id": "cb0e098bd4bcb6f3f56c9427",
+    "reported_at": "2026-08-19 20:40:33",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=cb0e098bd4bcb6f3f56c9427",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:40",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:40",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:41",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@reindeer.2551623"
+  },
+  "https://www.threads.net/@jiangbeina": {
+    "username": "jiangbeina",
+    "case_id": "1f2ec7b2a061f1a541332799",
+    "reported_at": "2026-08-19 20:40:40",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=1f2ec7b2a061f1a541332799",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:40",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  22:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  08:38",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@jiangbeina"
+  },
+  "https://www.threads.net/@camel.76707241": {
+    "username": "camel.76707241",
+    "case_id": "f1b70bde01f567dcc893d2ad",
+    "reported_at": "2026-08-19 20:40:48",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=f1b70bde01f567dcc893d2ad",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:40",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:51",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:25",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@camel.76707241"
+  },
+  "https://www.threads.net/@gazelle.59155477": {
+    "username": "gazelle.59155477",
+    "case_id": "b26d88a81492b93d2d880f49",
+    "reported_at": "2026-08-19 20:40:56",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=b26d88a81492b93d2d880f49",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:40",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:40",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:41",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@gazelle.59155477"
+  },
+  "https://www.threads.net/@1999.11.20_quan": {
+    "username": "1999.11.20_quan",
+    "case_id": "80253fb6788388d88f0a3cd5",
+    "reported_at": "2026-08-19 20:41:04",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=80253fb6788388d88f0a3cd5",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:41",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  22:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  08:37",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@1999.11.20_quan"
+  },
+  "https://www.threads.net/@broeringsnoozy31": {
+    "username": "broeringsnoozy31",
+    "case_id": "cb3c841252efd2e8c26cad3a",
+    "reported_at": "2026-08-19 20:41:12",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=cb3c841252efd2e8c26cad3a",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:41",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:03",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:25",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@broeringsnoozy31"
+  },
+  "https://www.threads.net/@jpottsiarhphe": {
+    "username": "jpottsiarhphe",
+    "case_id": "2426860457b01bdaa4a7f702",
+    "reported_at": "2026-08-19 20:41:21",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=2426860457b01bdaa4a7f702",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:41",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  22:00",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  08:31",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@jpottsiarhphe"
+  },
+  "https://www.threads.net/@elk.1581422": {
+    "username": "elk.1581422",
+    "case_id": "187bcbed205c709854c863cd",
+    "reported_at": "2026-08-19 20:41:29",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=187bcbed205c709854c863cd",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:41",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:41",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:41",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@elk.1581422"
+  },
+  "https://www.threads.net/@elephant.30444265": {
+    "username": "elephant.30444265",
+    "case_id": "6025e91234f05b5a8d060d7b",
+    "reported_at": "2026-08-19 20:41:36",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=6025e91234f05b5a8d060d7b",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:41",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  10:03",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:24",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@elephant.30444265"
+  },
+  "https://www.threads.net/@bear.3604890": {
+    "username": "bear.3604890",
+    "case_id": "6f674c0682efe89be7ade306",
+    "reported_at": "2026-08-19 20:41:44",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=6f674c0682efe89be7ade306",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:41",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:41",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:42",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@bear.3604890"
+  },
+  "https://www.threads.net/@turtle.77257340": {
+    "username": "turtle.77257340",
+    "case_id": "4cacfa799ae7c2b81ec8747a",
+    "reported_at": "2026-08-19 20:41:52",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=4cacfa799ae7c2b81ec8747a",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:41",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:41",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:42",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@turtle.77257340"
+  },
+  "https://www.threads.net/@goose.7064737": {
+    "username": "goose.7064737",
+    "case_id": "a43d7204eaeec74d723de386",
+    "reported_at": "2026-08-19 20:42:00",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=a43d7204eaeec74d723de386",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:41",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:41",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:42",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@goose.7064737"
+  },
+  "https://www.threads.net/@sheep.9317096": {
+    "username": "sheep.9317096",
+    "case_id": "9400523495f6f42aad8ed3de",
+    "reported_at": "2026-08-19 20:42:07",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=9400523495f6f42aad8ed3de",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:42",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:42",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:42",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Active",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Active"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@sheep.9317096"
+  },
+  "https://www.threads.net/@tiger.960702": {
+    "username": "tiger.960702",
+    "case_id": "9e73e94483921858f757f34b",
+    "reported_at": "2026-08-19 20:42:15",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=9e73e94483921858f757f34b",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:42",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:42",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:42",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@tiger.960702"
+  },
+  "https://www.threads.net/@rouo7135": {
+    "username": "rouo7135",
+    "case_id": "ac80aa19f8a9a56c156a20d0",
+    "reported_at": "2026-08-19 20:42:23",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=ac80aa19f8a9a56c156a20d0",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:42",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:51",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:24",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@rouo7135"
+  },
+  "https://www.threads.net/@moose.2353282": {
+    "username": "moose.2353282",
+    "case_id": "eea157bdfd52df89c1ef2257",
+    "reported_at": "2026-08-19 20:42:31",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=eea157bdfd52df89c1ef2257",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:42",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:42",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:43",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@moose.2353282"
+  },
+  "https://www.threads.net/@s9615328": {
+    "username": "s9615328",
+    "case_id": "bacc395c3baeb910ebc38340",
+    "reported_at": "2026-08-19 20:42:39",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=bacc395c3baeb910ebc38340",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:42",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:42",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:43",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@s9615328"
+  },
+  "https://www.threads.net/@reindeer.8094223": {
+    "username": "reindeer.8094223",
+    "case_id": "056e394b39a68f3127eaef90",
+    "reported_at": "2026-08-19 20:42:47",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=056e394b39a68f3127eaef90",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:42",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/20  09:51",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/20  11:24",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@reindeer.8094223"
+  },
+  "https://www.threads.net/@sks80588": {
+    "username": "sks80588",
+    "case_id": "ca744bf43a67510e15ec970e",
+    "reported_at": "2026-08-19 20:42:55",
+    "fraudbuster_url": "https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id=ca744bf43a67510e15ec970e",
+    "fb_is_final": true,
+    "timeline_stages": [
+      {
+        "stage_num": 1,
+        "time": "2026/08/19  20:42",
+        "desc": "民眾舉報，疑似詐騙訊息。",
+        "is_complete": false
+      },
+      {
+        "stage_num": 2,
+        "time": "2026/08/19  20:42",
+        "desc": "已通知 內政部，確認中",
+        "is_complete": false
+      },
+      {
+        "stage_num": 3,
+        "time": "2026/08/19  20:43",
+        "desc": "內政部已經確認，這是詐騙訊息，已通知Meta移除。",
+        "is_complete": true
+      }
+    ],
+    "threads_actual_status": "Removed",
+    "first_checked_at": "2026-08-22 07:30:06",
+    "last_checked_at": "2026-08-22 07:30:06",
+    "takedown_detected_at": "2026-08-22 07:30:06",
+    "check_count": 1,
+    "check_history": [
+      {
+        "check_index": 1,
+        "checked_at": "2026-08-22 07:30:06",
+        "threads_status": "Removed"
+      }
+    ],
+    "threads_url": "https://www.threads.net/@sks80588"
   }
 }
