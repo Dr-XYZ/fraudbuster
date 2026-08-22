@@ -12,7 +12,7 @@ INPUT_FILE = "reports.json"       # 原始待查清單
 DB_FILE = "tracking_db.json"      # 完整歷程資料庫 (唯一的 JSON)
 BATCH_SIZE = 100                  # 每次排程執行上限筆數
 
-FIRST_CHECK_DELAY_DAYS = 2  # 通報滿 2 天 (48 小時) 才進行初查
+FIRST_CHECK_DELAY_DAYS = 1  # 通報滿 2 天 (48 小時) 才進行初查
 RECHECK_INTERVAL_DAYS = 1   # 仍在線者，距離上次檢查需間隔滿 1 天 (24 小時)
 
 BROWSER_HEADERS = {
