@@ -227,12 +227,15 @@ def main():
                 continue
             recheck_items.append((url, info, hist_rec, now_str))
 
-    # 優先處理未曾初查的新案件，剩餘配額給需複查案件
-    eligible_items = fresh_items + recheck_items
+    # 排序複查項目：距離上次檢查時間最久者優先
+    recheck_items.sort(key=lambda x: parse_dt(x[2].get("last_checked_at", "")) or datetime.min)
+
+    # 優先處理已在線需複查的案件，剩餘配額給未曾初查的新案件
+    eligible_items = recheck_items + fresh_items
     batch = eligible_items[:args.batch_size]
 
     print(f"⏰ [Batch Crawler] 執行時間：{now_str}")
-    print(f"• 待檢查合格案件：{len(eligible_items)} 筆 (未初查: {len(fresh_items)}, 需複查: {len(recheck_items)})")
+    print(f"• 待檢查合格案件：{len(eligible_items)} 筆 (優先複查: {len(recheck_items)}, 未初查新案: {len(fresh_items)})")
     print(f"• 本次並發處理：{len(batch)} 筆 (並發數: {args.concurrency})")
 
     if not batch:
