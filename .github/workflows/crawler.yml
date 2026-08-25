@@ -1,0 +1,64 @@
+name: Scheduled Batch Fraud Tracking Crawler
+
+on:
+  schedule:
+    - cron: '23 */2 * * *' # 避開整點尖峰塞車，改於每 2 小時的 23 分執行
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: '每次爬取的案件筆數 (Batch Size)'
+        required: false
+        default: '500'
+      concurrency:
+        description: '並發執行緒數 (Concurrency)'
+        required: false
+        default: '10'
+
+permissions:
+  contents: write
+
+jobs:
+  batch-crawl:
+    runs-on: ubuntu-latest
+    name: High-Throughput Case Tracking
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python Dependencies
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Run Batch Crawler
+        run: |
+          BATCH_SIZE="${{ github.event.inputs.batch_size || '500' }}"
+          CONCURRENCY="${{ github.event.inputs.concurrency || '10' }}"
+          echo "🚀 Starting crawler with Batch Size: $BATCH_SIZE, Concurrency: $CONCURRENCY"
+          python3 scripts/batch_crawler.py --batch-size "$BATCH_SIZE" --concurrency "$CONCURRENCY"
+
+      - name: Apply Updates to Cloudflare D1
+        if: always()
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: |
+            if [ -f crawler_update.sql ] && [ -s crawler_update.sql ]; then
+              echo "Applying crawler_update.sql to Cloudflare D1..."
+              npx wrangler d1 execute fraudbuster-db --file=crawler_update.sql --remote --yes || true
+            else
+              echo "No updates to apply."
+            fi
+
+      - name: Commit & Push Updated Tracking Database
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Actions"
+          git add tracking_db.json
+          git diff --staged --quiet || (git commit -m "chore(crawler): auto-update tracking database [skip ci]" && git push)
+

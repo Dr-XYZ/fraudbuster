@@ -3,15 +3,15 @@
 import { parseDt, formatDateStr, fetchFraudbusterStages, checkThreadsStatus } from './parser.js';
 import { renderDashboardHTML } from './dashboard.js';
 
-const BATCH_SIZE = 100; // 每次 Cron/手動執行最多處理 100 筆
-const FIRST_CHECK_DELAY_DAYS = 1; // 通報滿 2 天 (48h)
+const BATCH_SIZE = 20; // 每次 Cron/手動執行最多處理 20 筆 (防範 Cloudflare 50 次子請求上限)
+const FIRST_CHECK_DELAY_DAYS = 1; // 通報滿 1 天 (24h)
 const RECHECK_INTERVAL_DAYS = 1;  // 間隔滿 1 天 (24h)
 
 /**
  * 核心增量追蹤執行邏輯 (使用 Cloudflare D1)
  */
 async function runTrackingBatch(env) {
-  // 從 D1 讀取所有待查詢的 reports 與對應的 cases 歷程紀錄
+  // 從 D1 讀取所有待查詢的 reports 與對應的 cases 歷程紀錄 (優先排序未初查案件)
   const { results } = await env.DB.prepare(`
     SELECT r.url, r.username, r.case_id, r.reported_at,
            c.fraudbuster_url, c.fb_is_final, c.timeline_stages,
@@ -20,12 +20,14 @@ async function runTrackingBatch(env) {
     FROM reports r
     LEFT JOIN cases c ON r.url = c.url
     WHERE c.threads_actual_status IS NULL OR c.threads_actual_status != 'Removed'
+    ORDER BY (c.first_checked_at IS NULL) DESC, c.last_checked_at ASC
   `).all();
 
   const now = new Date();
-  const eligibleItems = [];
+  const freshItems = [];
+  const recheckItems = [];
 
-  for (const row of results) {
+  for (const row of (results || [])) {
     // 已下架者不再重複爬取
     if (row.threads_actual_status === "Removed") {
       continue;
@@ -34,23 +36,25 @@ async function runTrackingBatch(env) {
     const reportedDt = parseDt(row.reported_at);
 
     if (!row.last_checked_at) {
-      // 首次檢查門檻 (滿 2 天)
+      // 首次檢查門檻 (滿 1 天)
       if (reportedDt && (now.getTime() - reportedDt.getTime()) < FIRST_CHECK_DELAY_DAYS * 24 * 3600 * 1000) {
         continue;
       }
-      eligibleItems.push(row);
+      freshItems.push(row);
     } else {
       // 複查門檻 (間隔滿 1 天)
       const lastCheckedDt = parseDt(row.last_checked_at);
       if (lastCheckedDt && (now.getTime() - lastCheckedDt.getTime()) < RECHECK_INTERVAL_DAYS * 24 * 3600 * 1000) {
         continue;
       }
-      eligibleItems.push(row);
+      recheckItems.push(row);
     }
   }
 
+  // 優先處理未初查案件
+  const eligibleItems = [...freshItems, ...recheckItems];
   const batch = eligibleItems.slice(0, BATCH_SIZE);
-  console.log(`⏰ [Cron Trigger] 當前時段處理 ${batch.length} 筆案件 (總合格數: ${eligibleItems.length})`);
+  console.log(`⏰ [Cron Trigger] 當前時段處理 ${batch.length} 筆案件 (未初查: ${freshItems.length}, 需複查: ${recheckItems.length})`);
 
   if (batch.length === 0) {
     return { processed: 0, message: "目前無達到檢查時間點的案件" };

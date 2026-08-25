@@ -1,0 +1,8 @@
+node_modules/
+.wrangler/
+d1_chunks/
+crawler_update.sql
+__pycache__/
+*.pyc
+.DS_Store
+
