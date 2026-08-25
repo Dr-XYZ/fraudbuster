@@ -2,7 +2,7 @@ name: Scheduled Batch Fraud Tracking Crawler
 
 on:
   schedule:
-    - cron: '23 */2 * * *' # 避開整點尖峰塞車，改於每 2 小時的 23 分執行
+    - cron: '23 */2 * * *' # 避開整點尖峰塞車，每 2 小時的 23 分執行
   workflow_dispatch:
     inputs:
       batch_size:
@@ -16,11 +16,20 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  batch-crawl:
+  batch-crawl-and-deploy:
     runs-on: ubuntu-latest
-    name: High-Throughput Case Tracking
+    name: High-Throughput Crawler & Auto Deploy
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -29,11 +38,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
 
       - name: Install Python Dependencies
         run: |
@@ -46,22 +50,25 @@ jobs:
           echo "🚀 Starting crawler with Batch Size: $BATCH_SIZE, Concurrency: $CONCURRENCY"
           python3 scripts/batch_crawler.py --batch-size "$BATCH_SIZE" --concurrency "$CONCURRENCY"
 
-      - name: Apply Updates to Cloudflare D1
-        if: always()
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Generate Dashboard HTML
         run: |
-          if [ -f crawler_update.sql ] && [ -s crawler_update.sql ]; then
-            echo "⚡ Applying crawler_update.sql to Cloudflare D1..."
-            npx wrangler d1 execute fraudbuster-db --file=crawler_update.sql --remote --yes || true
-          else
-            echo "No updates to apply."
-          fi
+          python3 generate_dashboard.py
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './public'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Commit & Push Updated Tracking Database
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Actions"
-          git add tracking_db.json
-          git diff --staged --quiet || (git commit -m "chore(crawler): auto-update tracking database [skip ci]" && git push)
+          git add tracking_db.json index.html
+          git diff --staged --quiet || (git commit -m "chore(crawler): update tracking database & dashboard [skip ci]" && git push)

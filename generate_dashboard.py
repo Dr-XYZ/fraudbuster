@@ -460,7 +460,10 @@ def main():
     with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
         f.write(html_content)
 
-    print(f"✅ 帶有完整時間註記之儀表板已產出至：{OUTPUT_HTML}")
+    with open("index.html", "w", encoding="utf-8") as f:
+        f.write(html_content)
+
+    print(f"✅ 帶有完整時間註記之儀表板已產出至：{OUTPUT_HTML} 及 index.html")
 
 if __name__ == "__main__":
     main()

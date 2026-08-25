@@ -1,4 +1,4 @@
-name: Deploy Cloudflare Worker & GitHub Pages Redirect
+name: Build and Deploy Dashboard to GitHub Pages
 
 on:
   push:
@@ -7,14 +7,21 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  deploy-worker:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    name: Deploy Cloudflare Worker
+    name: Build Dashboard & Deploy Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -24,45 +31,17 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Generate D1 SQL Seed Chunks
+      - name: Generate Dashboard HTML
         run: |
-          python3 scripts/seed_d1.py --export-sql --chunk-size 1000
+          python3 generate_dashboard.py
 
-      - name: Sync Database to Cloudflare D1
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: |
-          for f in d1_chunks/*.sql; do
-            echo "⚡ Syncing $f to Cloudflare D1..."
-            npx wrangler d1 execute fraudbuster-db --file="$f" --remote --yes || true
-          done
-
-      - name: Deploy Worker to Cloudflare Workers
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-
-  deploy-pages:
-    runs-on: ubuntu-latest
-    name: Deploy Redirect Page to GitHub Pages
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Setup Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: './public'
 
       - name: Deploy to GitHub Pages
         id: deployment

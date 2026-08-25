@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-scripts/batch_crawler.py - GitHub Actions 高並發大批次爬蟲
+scripts/batch_crawler.py - GitHub Actions 高並發大批次爬蟲 (純 JSON 資料庫版)
 功能：
-1. 從 reports.json 及 tracking_db.json (或 Cloudflare D1) 讀取待爬案件。
+1. 從 reports.json 及 tracking_db.json 讀取待爬案件。
 2. 優先處理「尚未初查」的新案件，其次處理「需要複查」的活躍案件。
 3. 使用 ThreadPoolExecutor 並發抓取 Threads 及 打詐通報網 狀態。
-4. 輸出更新 SQL 檔案並直接寫入 tracking_db.json 與 (選填) Cloudflare D1。
+4. 爬取結果直接寫入 tracking_db.json。
 """
 
 import json
@@ -16,13 +16,11 @@ import os
 import argparse
 from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
-import urllib.request
 import requests
 from bs4 import BeautifulSoup
 
 INPUT_FILE = "reports.json"
 DB_FILE = "tracking_db.json"
-OUTPUT_SQL = "crawler_update.sql"
 
 FIRST_CHECK_DELAY_DAYS = 1  # 滿 1 天可初查
 RECHECK_INTERVAL_DAYS = 1   # 活躍中案件間隔滿 1 天複查
@@ -47,7 +45,6 @@ def parse_dt(dt_str: str):
     if not dt_str or str(dt_str).strip() in ["-", "", "None"]:
         return None
     clean_str = " ".join(str(dt_str).strip().split())
-    # Handle ISO formats
     if "T" in clean_str:
         clean_str = clean_str.split(".")[0].replace("T", " ")
     for fmt in ["%Y-%m-%d %H:%M:%S", "%Y/%m/%d %H:%M:%S", "%Y-%m-%d %H:%M", "%Y/%m/%d %H:%M", "%Y-%m-%d"]:
@@ -56,16 +53,6 @@ def parse_dt(dt_str: str):
         except ValueError:
             continue
     return None
-
-def escape_sql(val):
-    if val is None:
-        return "NULL"
-    if isinstance(val, bool):
-        return "1" if val else "0"
-    if isinstance(val, (int, float)):
-        return str(val)
-    clean_val = str(val).replace("'", "''")
-    return f"'{clean_val}'"
 
 def fetch_raw_fraudbuster_stages(case_id: str, session: requests.Session) -> dict:
     url = f"https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id={case_id}"
@@ -193,11 +180,10 @@ def process_single_case(item_tuple):
     return url, updated_record
 
 def main():
-    parser = argparse.ArgumentParser(description="High-throughput batch crawler for Fraudbuster cases")
+    parser = argparse.ArgumentParser(description="High-throughput batch crawler for Fraudbuster cases (Pure JSON DB)")
     parser.add_argument("--batch-size", type=int, default=500, help="Number of cases to process in this run (default: 500)")
     parser.add_argument("--concurrency", type=int, default=10, help="Number of worker threads (default: 10)")
-    parser.add_argument("--dry-run", action="store_true", help="Do not write results to disk or D1")
-    parser.add_argument("--export-sql", action="store_true", default=True, help="Export update SQL file for D1")
+    parser.add_argument("--dry-run", action="store_true", help="Do not write results to disk")
     args = parser.parse_args()
 
     if not os.path.exists(INPUT_FILE):
@@ -285,34 +271,7 @@ def main():
 
     with open(DB_FILE, "w", encoding="utf-8") as f:
         json.dump(history, f, ensure_ascii=False, indent=2)
-    print(f"💾 已更新本機資料庫：{DB_FILE}")
-
-    # 2. 產出 D1 專用增量 SQL 更新檔
-    sql_stmts = []
-    for url, r in results.items():
-        username = escape_sql(r.get("username", ""))
-        case_id = escape_sql(r.get("case_id", ""))
-        reported_at = escape_sql(r.get("reported_at", ""))
-        fraudbuster_url = escape_sql(r.get("fraudbuster_url", ""))
-        fb_is_final = 1 if r.get("fb_is_final") else 0
-        stages = r.get("timeline_stages", [])
-        stages_json = escape_sql(json.dumps(stages, ensure_ascii=False))
-        threads_actual_status = escape_sql(r.get("threads_actual_status", "Active"))
-        first_checked_at = escape_sql(r.get("first_checked_at", ""))
-        last_checked_at = escape_sql(r.get("last_checked_at", ""))
-        takedown_detected_at = escape_sql(r.get("takedown_detected_at", ""))
-        check_count = r.get("check_count", 1)
-        checks = r.get("check_history", [])
-        checks_json = escape_sql(json.dumps(checks, ensure_ascii=False))
-        url_sql = escape_sql(url)
-
-        stmt = f"INSERT INTO cases (url, username, case_id, reported_at, fraudbuster_url, fb_is_final, timeline_stages, threads_actual_status, first_checked_at, last_checked_at, takedown_detected_at, check_count, check_history, updated_at) VALUES ({url_sql}, {username}, {case_id}, {reported_at}, {fraudbuster_url}, {fb_is_final}, {stages_json}, {threads_actual_status}, {first_checked_at}, {last_checked_at}, {takedown_detected_at}, {check_count}, {checks_json}, {last_checked_at}) ON CONFLICT(url) DO UPDATE SET username=excluded.username, case_id=excluded.case_id, reported_at=excluded.reported_at, fraudbuster_url=excluded.fraudbuster_url, fb_is_final=excluded.fb_is_final, timeline_stages=excluded.timeline_stages, threads_actual_status=excluded.threads_actual_status, first_checked_at=excluded.first_checked_at, last_checked_at=excluded.last_checked_at, takedown_detected_at=excluded.takedown_detected_at, check_count=excluded.check_count, check_history=excluded.check_history, updated_at=excluded.updated_at;\n"
-        sql_stmts.append(stmt)
-
-    with open(OUTPUT_SQL, "w", encoding="utf-8") as f:
-        f.writelines(sql_stmts)
-    print(f"📄 已產出 D1 增量更新 SQL：`{OUTPUT_SQL}` (共 {len(sql_stmts)} 筆)")
+    print(f"💾 已更新資料庫：{DB_FILE}")
 
 if __name__ == "__main__":
     main()
-
