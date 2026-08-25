@@ -13,7 +13,9 @@ def parse_dt(dt_str):
     if not dt_str or str(dt_str).strip() in ["-", "", "None"]:
         return None
     clean_str = re.sub(r"\s+", " ", str(dt_str).strip())
-    for fmt in ["%Y-%m-%d %H:%M:%S", "%Y/%m/%d %H:%M:%S", "%Y-%m-%d %H:%M", "%Y/%m/%d %H:%M"]:
+    if "T" in clean_str:
+        clean_str = clean_str.split(".")[0].replace("T", " ")
+    for fmt in ["%Y-%m-%d %H:%M:%S", "%Y/%m/%d %H:%M:%S", "%Y-%m-%d %H:%M", "%Y/%m/%d %H:%M", "%Y-%m-%d"]:
         try:
             return datetime.strptime(clean_str, fmt)
         except ValueError:
@@ -120,23 +122,52 @@ def main():
             else:
                 lag_buckets["> 120小時 (> 5天)"] += 1
 
+        # 格式化階段歷程
+        stages_data = []
+        for s in r.get("timeline_stages", []):
+            s_dt = parse_dt(s.get("time", ""))
+            offset_str = ""
+            if s_dt and reported_dt and s_dt >= reported_dt:
+                diff_h = (s_dt - reported_dt).total_seconds() / 3600.0
+                offset_str = f"(+ {diff_h:.1f}h)"
+            stages_data.append({
+                "num": s.get("stage_num", "?"),
+                "time": s.get("time", ""),
+                "offset": offset_str,
+                "desc": s.get("desc", "")
+            })
+
+        # 格式化歷次檢查紀錄
+        checks_data = []
+        for chk in r.get("check_history", []):
+            checks_data.append({
+                "idx": chk.get("check_index"),
+                "time": chk.get("checked_at"),
+                "status": chk.get("threads_status", "")
+            })
+
         meta_cases.append({
-            "raw": r,
-            "reported_dt": reported_dt,
-            "meta_notified_dt": meta_notified_dt,
-            "t_takedown": t_takedown,
-            "last_checked_dt": last_checked_dt,
-            "th_status": th_status,
-            "is_removed": is_removed,
-            "lag_hours": lag_hours,
-            "meta_handling_hours": meta_handling_hours,
-            "official_review_hours": official_review_hours,
-            "time_note": time_note
+            "u": r.get("username", ""),
+            "case_id": r.get("case_id", ""),
+            "r_dt": reported_dt.strftime("%Y-%m-%d %H:%M:%S") if reported_dt else "-",
+            "m_dt": meta_notified_dt.strftime("%Y-%m-%d %H:%M") if meta_notified_dt else "-",
+            "is_rem": is_removed,
+            "th_st": "已下架 (Removed)" if is_removed else "仍存活 (Active)",
+            "lag_h": lag_hours,
+            "time_note": time_note,
+            "last_chk": last_checked_dt.strftime("%Y-%m-%d %H:%M:%S") if last_checked_dt else "-",
+            "th_url": r.get("threads_url", ""),
+            "fb_url": r.get("fraudbuster_url", ""),
+            "off_rev": official_review_hours,
+            "t_tk": t_takedown.strftime("%Y-%m-%d %H:%M:%S") if t_takedown else "尚未下架",
+            "chk_cnt": r.get("check_count", 1),
+            "stages": stages_data,
+            "checks": checks_data
         })
 
     # 彙整指標
     total_meta_notified = len(meta_cases)
-    total_removed = sum(1 for c in meta_cases if c["is_removed"])
+    total_removed = sum(1 for c in meta_cases if c["is_rem"])
     total_unremoved = total_meta_notified - total_removed
     
     inaction_rate = (total_unremoved / total_meta_notified * 100) if total_meta_notified > 0 else 0.0
@@ -150,18 +181,28 @@ def main():
     cohort_removed_data = [cohort_dates[d]["removed"] for d in sorted_cohort_dates]
     cohort_active_data = [cohort_dates[d]["active"] for d in sorted_cohort_dates]
 
+    # 預先排序：尚未移除（Active）且滯留最久的置頂
+    meta_cases.sort(key=lambda x: (x["is_rem"], -x["lag_h"]))
+
     os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+    cases_json_str = json.dumps(meta_cases, ensure_ascii=False)
 
     html_content = f"""<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meta 通報後下架時效與尚未移除時間關係圖</title>
+  <title>Meta 通報與尚未移除時間關係觀測站</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    .custom-scroll::-webkit-scrollbar {{ width: 6px; height: 6px; }}
+    .custom-scroll::-webkit-scrollbar-thumb {{ background: #334155; border-radius: 3px; }}
+    .custom-scroll::-webkit-scrollbar-track {{ background: #0f172a; }}
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen p-4 md:p-8 font-sans">
+<body class="bg-slate-950 text-slate-100 min-h-screen p-3 md:p-8 font-sans">
   <div class="max-w-7xl mx-auto space-y-6">
     
     <!-- 頂部標題與全站統計時間註記 -->
@@ -171,15 +212,14 @@ def main():
           <span class="text-3xl">⏱️</span>
           <h1 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">Meta 通報與尚未移除時間關係觀測站</h1>
         </div>
-        <!-- 全域統計基準時間標註 -->
         <div class="flex flex-wrap items-center gap-2 mt-2 text-xs">
           <span class="bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2.5 py-1 rounded-md font-mono">
-            🕒 統計計算基準時間：{now_str} (台北時間 UTC+8)
+            🕒 統計基準時間：{now_str} (UTC+8)
           </span>
           <span class="text-slate-400">所有案件滯留時長均以此時間點為計算依據</span>
         </div>
       </div>
-      <div class="mt-4 md:mt-0 flex gap-2">
+      <div class="mt-4 md:mt-0 flex items-center gap-3">
         <div class="bg-slate-900 border border-slate-800 px-4 py-2 rounded-xl text-xs text-slate-300">
           已通知 Meta 總數：<span class="text-blue-400 font-bold text-base">{total_meta_notified}</span> 筆
         </div>
@@ -222,7 +262,7 @@ def main():
             <h3 class="text-sm font-bold text-slate-200">📊 尚未移除帳號之「被通知後滯留時間」分佈</h3>
             <p class="text-xs text-slate-500">呈現 {total_unremoved} 筆存活帳號已被官方通報多久未處置</p>
           </div>
-          <span class="px-2 py-0.5 rounded text-xs bg-rose-500/10 text-rose-400 border border-rose-500/20">滯留階梯分析</span>
+          <span class="px-2 py-0.5 rounded text-xs bg-rose-500/10 text-rose-400 border border-rose-500/20">滯留階梯</span>
         </div>
         <div class="h-64"><canvas id="lagBucketChart"></canvas></div>
       </div>
@@ -240,18 +280,34 @@ def main():
       </div>
     </div>
 
-    <!-- 詳細清單表格（每筆均有精確時間戳記與時效註記） -->
+    <!-- 詳細清單表格（高效能分頁 & 即時篩選） -->
     <div class="bg-slate-900/90 border border-slate-800 rounded-xl overflow-hidden shadow-2xl">
-      <div class="p-4 border-b border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
+      <!-- 控制列 -->
+      <div class="p-4 border-b border-slate-800 flex flex-col md:flex-row justify-between items-stretch md:items-center gap-3">
         <div>
-          <h3 class="font-bold text-slate-100">📋 案件詳細時間註記清單 (共 {total_meta_notified} 筆)</h3>
-          <p class="text-xs text-slate-400">點擊任一行可展開「通報各階段歷程時間軸」與「系統輪詢偵測時間點」</p>
+          <h3 class="font-bold text-slate-100 flex items-center gap-2">
+            <span>📋 案件詳細時間註記清單</span>
+            <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-0.5 rounded-full" id="matchedCountTag">{total_meta_notified} 筆</span>
+          </h3>
+          <p class="text-xs text-slate-400 mt-0.5">點擊任一行可即時展開「通報各階段時間軸」與「輪詢偵測紀錄」</p>
         </div>
-        <input type="text" id="tableSearch" placeholder="搜尋帳號、Case ID..." class="bg-slate-950 border border-slate-700 px-3 py-1.5 rounded-lg text-sm text-slate-200 focus:outline-none focus:border-rose-500 w-full md:w-72">
+
+        <div class="flex flex-wrap items-center gap-2">
+          <!-- 狀態篩選 -->
+          <select id="statusFilter" class="bg-slate-950 border border-slate-700 px-3 py-1.5 rounded-lg text-sm text-slate-200 focus:outline-none focus:border-blue-500">
+            <option value="ALL">全部狀態</option>
+            <option value="ACTIVE" selected>僅看尚未移除 (Active)</option>
+            <option value="REMOVED">僅看已下架 (Removed)</option>
+          </select>
+
+          <!-- 搜尋欄 -->
+          <input type="text" id="tableSearch" placeholder="搜尋帳號、Case ID..." class="bg-slate-950 border border-slate-700 px-3 py-1.5 rounded-lg text-sm text-slate-200 focus:outline-none focus:border-blue-500 w-full sm:w-60">
+        </div>
       </div>
 
-      <div class="overflow-x-auto max-h-[650px]">
-        <table class="w-full text-left text-sm text-slate-300" id="casesTable">
+      <!-- 表格內容 -->
+      <div class="overflow-x-auto max-h-[620px] custom-scroll">
+        <table class="w-full text-left text-sm text-slate-300">
           <thead class="bg-slate-950 text-xs uppercase text-slate-400 sticky top-0 backdrop-blur z-10">
             <tr>
               <th class="p-3">帳號</th>
@@ -264,117 +320,29 @@ def main():
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-800/80" id="tableBody">
-"""
-
-    # 排序：尚未移除（Active）且滯留最久的置頂
-    meta_cases.sort(key=lambda x: (x["is_removed"], -x["lag_hours"]))
-
-    if not meta_cases:
-        html_content += """
-            <tr>
-              <td colspan="7" class="p-12 text-center text-slate-500">
-                ⏳ 目前尚無已通知 Meta 的案件資料
-              </td>
-            </tr>"""
-    else:
-        for idx, c in enumerate(meta_cases):
-            r = c["raw"]
-            is_rem = c["is_removed"]
-            th_badge = "text-emerald-400" if is_rem else "text-rose-400 font-bold"
-            th_status_text = "已下架 (Removed)" if is_rem else "仍存活 (Active)"
-
-            reported_str = c["reported_dt"].strftime("%Y-%m-%d %H:%M:%S") if c["reported_dt"] else "-"
-            notified_str = c["meta_notified_dt"].strftime("%Y-%m-%d %H:%M") if c["meta_notified_dt"] else "-"
-            last_check_str = c["last_checked_dt"].strftime("%Y-%m-%d %H:%M:%S") if c["last_checked_dt"] else "-"
-            takedown_str = c["t_takedown"].strftime("%Y-%m-%d %H:%M:%S") if c["t_takedown"] else "尚未下架"
-
-            if is_rem:
-                time_badge = "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded text-xs font-mono"
-            else:
-                if c["lag_hours"] >= 48:
-                    time_badge = "bg-rose-500/20 text-rose-300 border border-rose-500/40 px-2 py-0.5 rounded text-xs font-mono font-bold"
-                else:
-                    time_badge = "bg-amber-500/20 text-amber-300 border border-amber-500/40 px-2 py-0.5 rounded text-xs font-mono"
-
-            # 展開階段歷程附帶時間差標註
-            stages_html = ""
-            for s in r.get("timeline_stages", []):
-                s_dt = parse_dt(s.get("time", ""))
-                offset_str = ""
-                if s_dt and c["reported_dt"] and s_dt >= c["reported_dt"]:
-                    diff_h = (s_dt - c["reported_dt"]).total_seconds() / 3600.0
-                    offset_str = f"(+ {diff_h:.1f}h)"
-                
-                stages_html += f"""
-                  <div class="flex items-start space-x-3 text-xs py-1.5 border-b border-slate-900 last:border-0">
-                    <span class="bg-blue-500/20 text-blue-400 px-1.5 py-0.5 rounded font-mono font-bold">階段 {s.get('stage_num', '?')}</span>
-                    <span class="text-slate-400 font-mono">[{s.get('time','')}]</span>
-                    <span class="text-slate-500 font-mono text-[11px]">{offset_str}</span>
-                    <span class="text-slate-200 flex-1">{s.get('desc','')}</span>
-                  </div>"""
-
-            # 展開歷次偵測紀錄
-            checks_html = ""
-            for chk in r.get("check_history", []):
-                chk_status = chk.get("threads_status", "")
-                c_badge = "text-emerald-400" if chk_status == "Removed" else "text-rose-400"
-                checks_html += f"""
-                  <span class="inline-block bg-slate-900 border border-slate-800 px-2.5 py-1 rounded text-xs mr-2 mb-1">
-                    第 {chk.get('check_index')} 次偵測 ➔ 時間: <span class="font-mono text-slate-300">{chk.get('checked_at')}</span> | 實況: <strong class="{c_badge}">{chk_status}</strong>
-                  </span>"""
-
-            html_content += f"""
-            <tr class="case-row hover:bg-slate-850 transition cursor-pointer" onclick="toggleDetail('detail_{idx}')">
-              <td class="p-3 font-semibold text-slate-100">@{r.get('username','')}</td>
-              <td class="p-3 text-slate-400 font-mono text-xs">{reported_str}</td>
-              <td class="p-3 text-blue-300 font-mono text-xs">{notified_str}</td>
-              <td class="p-3 {th_badge}">{th_status_text}</td>
-              <td class="p-3"><span class="{time_badge}">{c['time_note']}</span></td>
-              <td class="p-3 text-slate-400 text-xs font-mono">{last_check_str}</td>
-              <td class="p-3 text-right space-x-2 text-xs" onclick="event.stopPropagation()">
-                <a href="{r.get('threads_url','')}" target="_blank" class="text-blue-400 hover:underline">Threads</a>
-                <a href="{r.get('fraudbuster_url','')}" target="_blank" class="text-purple-400 hover:underline">通報網</a>
-              </td>
-            </tr>
-            <tr id="detail_{idx}" class="hidden bg-slate-900/40">
-              <td colspan="7" class="p-5 border-l-4 border-blue-500 space-y-4">
-                <!-- 時間標註總結方塊 -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 bg-slate-950 p-3 rounded-lg border border-slate-800 text-xs">
-                  <div>• 通報至官方審畢: <strong class="text-purple-400 font-mono">{c['official_review_hours'] if c['official_review_hours'] is not None else '-'} 小時</strong></div>
-                  <div>• 下架確認時間: <strong class="text-emerald-400 font-mono">{takedown_str}</strong></div>
-                  <div>• 累計偵測次數: <strong class="text-slate-300 font-mono">{r.get('check_count', 1)} 次</strong></div>
-                </div>
-
-                <!-- 各階段詳細時間軸 -->
-                <div>
-                  <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">📋 數發部通報各階段歷程與時間差</div>
-                  <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
-                    {stages_html if stages_html else '<div class="text-xs text-slate-500">尚無歷程資料</div>'}
-                  </div>
-                </div>
-
-                <!-- 系統輪詢偵測紀錄 -->
-                <div>
-                  <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">⏱️ 系統輪詢檢查時間紀錄</div>
-                  <div class="p-3 bg-slate-950/80 rounded-lg border border-slate-800">
-                    {checks_html}
-                  </div>
-                </div>
-              </td>
-            </tr>"""
-
-    html_content += f"""
+            <!-- 由前端極速渲染當前頁 -->
           </tbody>
         </table>
       </div>
+
+      <!-- 分頁控制項 -->
+      <div class="p-4 bg-slate-950/80 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-400">
+        <div id="pageInfo">顯示第 1 到 50 筆</div>
+        <div class="flex items-center gap-1.5" id="paginationBtns">
+          <!-- 分頁按鈕 -->
+        </div>
+      </div>
     </div>
+
   </div>
 
   <script>
-    function toggleDetail(id) {{
-      const el = document.getElementById(id);
-      if (el) el.classList.toggle('hidden');
-    }}
+    // 原始精簡資料集 (In-Memory Array)
+    const ALL_CASES = {cases_json_str};
+    let filteredCases = [...ALL_CASES];
+    let currentPage = 1;
+    const PAGE_SIZE = 50;
+    const expandedRows = new Set();
 
     // 1. 滯留時長階梯圖
     new Chart(document.getElementById('lagBucketChart'), {{
@@ -439,20 +407,177 @@ def main():
       }}
     }});
 
-    // 關鍵字即時搜尋
-    document.getElementById('tableSearch').addEventListener('input', function(e) {{
-      const val = e.target.value.toLowerCase();
-      document.querySelectorAll('#tableBody tr.case-row').forEach(row => {{
-        const isMatch = row.innerText.toLowerCase().includes(val);
-        row.style.display = isMatch ? '' : 'none';
+    // 切換展開/收合案件歷程
+    function toggleDetail(idx) {{
+      if (expandedRows.has(idx)) {{
+        expandedRows.delete(idx);
+      }} else {{
+        expandedRows.add(idx);
+      }}
+      renderTable();
+    }}
+
+    // 高效能分頁與表格渲染
+    function renderTable() {{
+      const tbody = document.getElementById('tableBody');
+      const totalItems = filteredCases.length;
+      const totalPages = Math.ceil(totalItems / PAGE_SIZE) || 1;
+
+      if (currentPage > totalPages) currentPage = totalPages;
+      if (currentPage < 1) currentPage = 1;
+
+      const start = (currentPage - 1) * PAGE_SIZE;
+      const end = Math.min(start + PAGE_SIZE, totalItems);
+      const pageData = filteredCases.slice(start, end);
+
+      document.getElementById('matchedCountTag').innerText = `${{totalItems}} 筆`;
+      document.getElementById('pageInfo').innerText = totalItems > 0 
+        ? `顯示第 ${{start + 1}} 到 ${{end}} 筆 (共 ${{totalItems}} 筆)`
+        : '無符合條件之案件';
+
+      if (pageData.length === 0) {{
+        tbody.innerHTML = `<tr><td colspan="7" class="p-12 text-center text-slate-500">🔍 沒有找到符合條件的案件</td></tr>`;
+        renderPagination(totalPages);
+        return;
+      }}
+
+      let rowsHtml = '';
+      pageData.forEach((c, i) => {{
+        const globalIdx = start + i;
+        const isRem = c.is_rem;
+        const thBadge = isRem ? 'text-emerald-400' : 'text-rose-400 font-bold';
         
-        const detailId = row.getAttribute('onclick').match(/'([^']+)'/)[1];
-        const detailRow = document.getElementById(detailId);
-        if (!isMatch && detailRow) {{
-          detailRow.classList.add('hidden');
+        let timeBadge = '';
+        if (isRem) {{
+          timeBadge = 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded text-xs font-mono';
+        }} else {{
+          if (c.lag_h >= 48) {{
+            timeBadge = 'bg-rose-500/20 text-rose-300 border border-rose-500/40 px-2 py-0.5 rounded text-xs font-mono font-bold';
+          }} else {{
+            timeBadge = 'bg-amber-500/20 text-amber-300 border border-amber-500/40 px-2 py-0.5 rounded text-xs font-mono';
+          }}
+        }}
+
+        const isExpanded = expandedRows.has(globalIdx);
+
+        rowsHtml += `
+          <tr class="hover:bg-slate-800/60 transition cursor-pointer ${{isExpanded ? 'bg-slate-800/40' : ''}}" onclick="toggleDetail(${{globalIdx}})">
+            <td class="p-3 font-semibold text-slate-100">@${{c.u}}</td>
+            <td class="p-3 text-slate-400 font-mono text-xs">${{c.r_dt}}</td>
+            <td class="p-3 text-blue-300 font-mono text-xs">${{c.m_dt}}</td>
+            <td class="p-3 ${{thBadge}}">${{c.th_st}}</td>
+            <td class="p-3"><span class="${{timeBadge}}">${{c.time_note}}</span></td>
+            <td class="p-3 text-slate-400 text-xs font-mono">${{c.last_chk}}</td>
+            <td class="p-3 text-right space-x-2 text-xs" onclick="event.stopPropagation()">
+              ${{c.th_url ? `<a href="${{c.th_url}}" target="_blank" class="text-blue-400 hover:underline">Threads</a>` : ''}}
+              ${{c.fb_url ? `<a href="${{c.fb_url}}" target="_blank" class="text-purple-400 hover:underline">通報網</a>` : ''}}
+            </td>
+          </tr>
+        `;
+
+        if (isExpanded) {{
+          let stagesHtml = (c.stages || []).map(s => `
+            <div class="flex items-start space-x-3 text-xs py-1.5 border-b border-slate-900 last:border-0">
+              <span class="bg-blue-500/20 text-blue-400 px-1.5 py-0.5 rounded font-mono font-bold">階段 ${{s.num}}</span>
+              <span class="text-slate-400 font-mono">[${{s.time}}]</span>
+              <span class="text-slate-500 font-mono text-[11px]">${{s.offset}}</span>
+              <span class="text-slate-200 flex-1">${{s.desc}}</span>
+            </div>
+          `).join('');
+
+          let checksHtml = (c.checks || []).map(chk => {{
+            const chkBadge = chk.status === 'Removed' ? 'text-emerald-400' : 'text-rose-400';
+            return `
+              <span class="inline-block bg-slate-900 border border-slate-800 px-2.5 py-1 rounded text-xs mr-2 mb-1">
+                第 ${{chk.idx}} 次偵測 ➔ 時間: <span class="font-mono text-slate-300">${{chk.time}}</span> | 實況: <strong class="${{chkBadge}}">${{chk.status}}</strong>
+              </span>
+            `;
+          }}).join('');
+
+          rowsHtml += `
+            <tr class="bg-slate-900/60">
+              <td colspan="7" class="p-5 border-l-4 border-blue-500 space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 bg-slate-950 p-3 rounded-lg border border-slate-800 text-xs">
+                  <div>• 通報至官方審畢: <strong class="text-purple-400 font-mono">${{c.off_rev !== null ? c.off_rev + ' 小時' : '-'}}</strong></div>
+                  <div>• 下架確認時間: <strong class="text-emerald-400 font-mono">${{c.t_tk}}</strong></div>
+                  <div>• 累計偵測次數: <strong class="text-slate-300 font-mono">${{c.chk_cnt}} 次</strong></div>
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">📋 數發部通報各階段歷程與時間差</div>
+                  <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">${{stagesHtml || '<div class="text-xs text-slate-500">尚無歷程資料</div>'}}</div>
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">⏱️ 系統輪詢檢查時間紀錄</div>
+                  <div class="p-3 bg-slate-950/80 rounded-lg border border-slate-800">${{checksHtml || '<div class="text-xs text-slate-500">尚無偵測紀錄</div>'}}</div>
+                </div>
+              </td>
+            </tr>
+          `;
         }}
       }});
-    }});
+
+      tbody.innerHTML = rowsHtml;
+      renderPagination(totalPages);
+    }}
+
+    function renderPagination(totalPages) {{
+      const container = document.getElementById('paginationBtns');
+      let html = `
+        <button onclick="goToPage(1)" class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800 hover:bg-slate-800 disabled:opacity-30" ${{currentPage === 1 ? 'disabled' : ''}}>«</button>
+        <button onclick="goToPage(${{currentPage - 1}})" class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800 hover:bg-slate-800 disabled:opacity-30" ${{currentPage === 1 ? 'disabled' : ''}}>‹</button>
+      `;
+
+      let startP = Math.max(1, currentPage - 2);
+      let endP = Math.min(totalPages, currentPage + 2);
+
+      for (let p = startP; p <= endP; p++) {{
+        html += `
+          <button onclick="goToPage(${{p}})" class="px-3 py-1 rounded font-mono text-xs ${{p === currentPage ? 'bg-blue-600 text-white font-bold' : 'bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800'}}">${{p}}</button>
+        `;
+      }}
+
+      html += `
+        <button onclick="goToPage(${{currentPage + 1}})" class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800 hover:bg-slate-800 disabled:opacity-30" ${{currentPage >= totalPages ? 'disabled' : ''}}>›</button>
+        <button onclick="goToPage(${{totalPages}})" class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800 hover:bg-slate-800 disabled:opacity-30" ${{currentPage >= totalPages ? 'disabled' : ''}}>»</button>
+      `;
+
+      container.innerHTML = html;
+    }}
+
+    function goToPage(p) {{
+      currentPage = p;
+      renderTable();
+      document.getElementById('tableBody').scrollIntoView({{ behavior: 'smooth', block: 'nearest' }});
+    }}
+
+    function applyFilters() {{
+      const query = document.getElementById('tableSearch').value.toLowerCase().trim();
+      const status = document.getElementById('statusFilter').value;
+
+      filteredCases = ALL_CASES.filter(c => {{
+        // 狀態篩選
+        if (status === 'ACTIVE' && c.is_rem) return false;
+        if (status === 'REMOVED' && !c.is_rem) return false;
+
+        // 關鍵字搜尋
+        if (query) {{
+          const targetStr = (c.u + ' ' + c.case_id + ' ' + c.time_note).toLowerCase();
+          if (!targetStr.includes(query)) return false;
+        }}
+
+        return true;
+      }});
+
+      currentPage = 1;
+      expandedRows.clear();
+      renderTable();
+    }}
+
+    document.getElementById('tableSearch').addEventListener('input', applyFilters);
+    document.getElementById('statusFilter').addEventListener('change', applyFilters);
+
+    // 初始渲染
+    applyFilters();
   </script>
 </body>
 </html>"""
@@ -463,7 +588,7 @@ def main():
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html_content)
 
-    print(f"✅ 帶有完整時間註記之儀表板已產出至：{OUTPUT_HTML} 及 index.html")
+    print(f"✅ 極速版儀表板已產出至：{OUTPUT_HTML} 及 index.html")
 
 if __name__ == "__main__":
     main()
