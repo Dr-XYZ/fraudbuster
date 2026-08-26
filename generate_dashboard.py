@@ -146,8 +146,12 @@ def main():
                 "status": chk.get("threads_status", "")
             })
 
+        username = r.get("username") or ""
+        if not username and r.get("threads_url") and "/@" in r.get("threads_url"):
+            username = r.get("threads_url").split("/@")[-1].split("?")[0].split("/")[0].strip()
+
         meta_cases.append({
-            "u": r.get("username", ""),
+            "u": username,
             "case_id": r.get("case_id", ""),
             "r_dt": reported_dt.strftime("%Y-%m-%d %H:%M:%S") if reported_dt else "-",
             "m_dt": meta_notified_dt.strftime("%Y-%m-%d %H:%M") if meta_notified_dt else "-",

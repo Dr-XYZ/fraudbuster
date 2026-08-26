@@ -3,9 +3,10 @@
 scripts/batch_crawler.py - GitHub Actions 高並發大批次爬蟲 (純 JSON 資料庫版)
 功能：
 1. 從 reports.json 及 tracking_db.json 讀取待爬案件。
-2. 優先處理「尚未初查」的新案件，其次處理「需要複查」的活躍案件。
-3. 使用 ThreadPoolExecutor 並發抓取 Threads 及 打詐通報網 狀態。
-4. 爬取結果直接寫入 tracking_db.json。
+2. 自動相容 case_id / caseId 與 URL 帳號解析。
+3. 優先重試未完整擷取/限流/未初查案件，並定期複查在線案件。
+4. 使用 ThreadPoolExecutor 並發抓取 Threads 及 打詐通報網 狀態。
+5. 爬取結果直接寫入 tracking_db.json。
 """
 
 import json
@@ -22,8 +23,7 @@ from bs4 import BeautifulSoup
 INPUT_FILE = "reports.json"
 DB_FILE = "tracking_db.json"
 
-FIRST_CHECK_DELAY_DAYS = 1  # 滿 1 天可初查
-RECHECK_INTERVAL_DAYS = 1   # 活躍中案件間隔滿 1 天複查
+RECHECK_INTERVAL_DAYS = 1   # 活躍中且已成功檢查過的案件，間隔滿 1 天複查
 
 BROWSER_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -53,6 +53,14 @@ def parse_dt(dt_str: str):
         except ValueError:
             continue
     return None
+
+def extract_case_info(url, info):
+    username = info.get("username") or info.get("userName") or ""
+    if not username and "/@" in url:
+        username = url.split("/@")[-1].split("?")[0].split("/")[0].strip()
+    case_id = info.get("case_id") or info.get("caseId") or ""
+    reported_at = info.get("reported_at") or ""
+    return username, case_id, reported_at
 
 def fetch_raw_fraudbuster_stages(case_id: str, session: requests.Session) -> dict:
     url = f"https://fraudbuster.digiat.org.tw/accessibility/detail?listType=N&id={case_id}"
@@ -90,7 +98,7 @@ def fetch_raw_fraudbuster_stages(case_id: str, session: requests.Session) -> dic
                 if len(stages) >= 3 or any(kw in all_desc for kw in TERMINAL_KEYWORDS) or (stages and stages[-1].get("is_complete")):
                     result["fb_is_final"] = True
         elif resp.status_code == 429:
-            time.sleep(5)
+            time.sleep(2)
     except requests.RequestException:
         pass
 
@@ -128,11 +136,9 @@ def process_single_case(item_tuple):
     url, info, hist_rec, now_str = item_tuple
     session = requests.Session()
     
-    username = info.get("username", "")
-    case_id = info.get("case_id", "")
-    reported_at = info.get("reported_at", "")
+    username, case_id, reported_at = extract_case_info(url, info)
 
-    # 1. 打詐通報網
+    # 1. 打詐通報網歷程
     if hist_rec.get("fb_is_final") and hist_rec.get("timeline_stages"):
         fb_data = {
             "fb_url": hist_rec.get("fraudbuster_url", ""),
@@ -146,6 +152,9 @@ def process_single_case(item_tuple):
 
     # 2. Threads 狀態檢測
     th_status = check_threads_status(url, username, session)
+    # 若遇到 Rate Limited 但之前有有效狀態，保留上次狀態避免資料被沖掉
+    if th_status == "Rate Limited" and hist_rec.get("threads_actual_status") in ["Active", "Removed"]:
+        th_status = hist_rec.get("threads_actual_status")
 
     first_checked_at = hist_rec.get("first_checked_at") or now_str
     check_count = (hist_rec.get("check_count") or 0) + 1
@@ -204,21 +213,36 @@ def main():
     now = datetime.now()
     now_str = now.strftime("%Y-%m-%d %H:%M:%S")
 
-    fresh_items = []     # 從未初查
-    recheck_items = []   # 需複查
+    fresh_items = []     # 從未初查 或 待補抓資料
+    recheck_items = []   # 正常在線需複查
 
     for url, info in raw_input.items():
         hist_rec = history.get(url, {})
+        username, case_id, reported_at = extract_case_info(url, info)
+        info["username"] = username
+        info["case_id"] = case_id
+        info["reported_at"] = reported_at
 
-        # 已判定下架則不重複爬
-        if hist_rec.get("threads_actual_status") == "Removed":
+        th_status = hist_rec.get("threads_actual_status")
+        has_stages = bool(hist_rec.get("timeline_stages"))
+
+        # 已判定下架且已有通報網歷程則不重複爬
+        if th_status == "Removed" and (has_stages or not case_id):
             continue
 
-        if not hist_rec or not hist_rec.get("first_checked_at"):
-            # 從未初查案件：新案件無任何天數限制，立刻初查
+        # 判定是否需要重試/初查（從未初查、被限流Rate Limited、發生錯誤Error、或有case_id但沒抓到stages）
+        is_incomplete = (
+            not hist_rec or 
+            not hist_rec.get("first_checked_at") or
+            th_status in ["Rate Limited", "Error", "None", None] or
+            str(th_status).startswith("HTTP_") or
+            (case_id and not has_stages)
+        )
+
+        if is_incomplete:
             fresh_items.append((url, info, hist_rec, now_str))
         else:
-            # 仍在線需複查案件：距離上次檢查需間隔滿 1 天 (24 小時)
+            # 正常在線案件：需間隔滿 1 天複查
             last_checked_dt = parse_dt(hist_rec.get("last_checked_at", ""))
             if last_checked_dt and (now - last_checked_dt) < timedelta(days=RECHECK_INTERVAL_DAYS):
                 continue
@@ -227,12 +251,12 @@ def main():
     # 排序複查項目：距離上次檢查時間最久者優先
     recheck_items.sort(key=lambda x: parse_dt(x[2].get("last_checked_at", "")) or datetime.min)
 
-    # 優先處理已在線需複查的案件，剩餘配額給未曾初查的新案件
+    # 優先處理已在線需複查的案件，剩餘配額給未初查/待補抓的新案件
     eligible_items = recheck_items + fresh_items
     batch = eligible_items[:args.batch_size]
 
     print(f"⏰ [Batch Crawler] 執行時間：{now_str}")
-    print(f"• 待檢查合格案件：{len(eligible_items)} 筆 (優先複查: {len(recheck_items)}, 未初查新案: {len(fresh_items)})")
+    print(f"• 待檢查合格案件：{len(eligible_items)} 筆 (優先複查: {len(recheck_items)}, 待補齊/初查: {len(fresh_items)})")
     print(f"• 本次並發處理：{len(batch)} 筆 (並發數: {args.concurrency})")
 
     if not batch:
