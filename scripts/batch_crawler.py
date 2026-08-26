@@ -214,17 +214,11 @@ def main():
         if hist_rec.get("threads_actual_status") == "Removed":
             continue
 
-        reported_at_dt = parse_dt(info.get("reported_at", ""))
-
         if not hist_rec or not hist_rec.get("first_checked_at"):
-            # 首次檢查門檻 (滿 1 天)
-            if reported_at_dt and (now - reported_at_dt) < timedelta(days=FIRST_CHECK_DELAY_DAYS):
-                continue
+            # 從未初查案件：直接加入初查清單（無天數限制）
             fresh_items.append((url, info, hist_rec, now_str))
         else:
-            last_checked_dt = parse_dt(hist_rec.get("last_checked_at", ""))
-            if last_checked_dt and (now - last_checked_dt) < timedelta(days=RECHECK_INTERVAL_DAYS):
-                continue
+            # 仍在線需複查案件：直接加入複查清單（無間隔限制）
             recheck_items.append((url, info, hist_rec, now_str))
 
     # 排序複查項目：距離上次檢查時間最久者優先
