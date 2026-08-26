@@ -215,10 +215,13 @@ def main():
             continue
 
         if not hist_rec or not hist_rec.get("first_checked_at"):
-            # 從未初查案件：直接加入初查清單（無天數限制）
+            # 從未初查案件：新案件無任何天數限制，立刻初查
             fresh_items.append((url, info, hist_rec, now_str))
         else:
-            # 仍在線需複查案件：直接加入複查清單（無間隔限制）
+            # 仍在線需複查案件：距離上次檢查需間隔滿 1 天 (24 小時)
+            last_checked_dt = parse_dt(hist_rec.get("last_checked_at", ""))
+            if last_checked_dt and (now - last_checked_dt) < timedelta(days=RECHECK_INTERVAL_DAYS):
+                continue
             recheck_items.append((url, info, hist_rec, now_str))
 
     # 排序複查項目：距離上次檢查時間最久者優先
