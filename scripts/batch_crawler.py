@@ -14,6 +14,7 @@ import time
 import random
 import re
 import os
+import sqlite3
 import argparse
 from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -22,6 +23,51 @@ from bs4 import BeautifulSoup
 
 INPUT_FILE = "reports.json"
 DB_FILE = "tracking_db.json"
+
+DEFAULT_SQLITE_PATHS = [
+    "/home/poan/Desktop/th/data/scam_hitter.db",
+    os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "..", "th", "data", "scam_hitter.db"),
+    os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "scam_hitter.db"),
+]
+
+def load_cases_from_sqlite(db_path: str) -> dict:
+    """從 SQLite 資料庫的 reported_history 表直接讀取待追蹤通報案件"""
+    cases = {}
+    if not os.path.exists(db_path):
+        return cases
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        cursor.execute("SELECT post_url, username, reported_at, details FROM reported_history ORDER BY id DESC")
+        rows = cursor.fetchall()
+        for post_url, username, reported_at, details_str in rows:
+            if not post_url:
+                continue
+            case_id = ""
+            risk = "中"
+            if details_str:
+                try:
+                    d = json.loads(details_str)
+                    case_id = d.get("caseId") or d.get("case_id") or ""
+                    risk = d.get("risk") or "中"
+                    if not reported_at:
+                        reported_at = d.get("reported_at") or ""
+                    if not username:
+                        username = d.get("username") or ""
+                except Exception:
+                    pass
+            if not username and "/@" in post_url:
+                username = post_url.split("/@")[-1].split("?")[0].split("/")[0].strip()
+            cases[post_url] = {
+                "reported_at": reported_at,
+                "case_id": case_id,
+                "username": username,
+                "risk": risk
+            }
+        conn.close()
+    except Exception as e:
+        print(f"⚠️ 讀取 SQLite 資料庫失敗 ({db_path}): {e}")
+    return cases
 
 RECHECK_INTERVAL_DAYS = 1   # 活躍中且已成功檢查過的案件，間隔滿 1 天複查
 
@@ -189,18 +235,47 @@ def process_single_case(item_tuple):
     return url, updated_record
 
 def main():
-    parser = argparse.ArgumentParser(description="High-throughput batch crawler for Fraudbuster cases (Pure JSON DB)")
+    parser = argparse.ArgumentParser(description="High-throughput batch crawler for Fraudbuster cases (SQLite / JSON)")
     parser.add_argument("--batch-size", type=int, default=500, help="Number of cases to process in this run (default: 500)")
     parser.add_argument("--concurrency", type=int, default=10, help="Number of worker threads (default: 10)")
+    parser.add_argument("--db", "--sqlite-db", dest="sqlite_db", default="", help="Path to SQLite database (default: auto-detect th/data/scam_hitter.db)")
+    parser.add_argument("--export-reports-json", action="store_true", help="Export loaded SQLite cases to reports.json")
     parser.add_argument("--dry-run", action="store_true", help="Do not write results to disk")
     args = parser.parse_args()
 
-    if not os.path.exists(INPUT_FILE):
-        print(f"❌ 找不到檔案 {INPUT_FILE}")
-        return
+    # 資料來源判定：優先讀取 SQLite 資料庫，若無則回退讀取 reports.json
+    raw_input = {}
+    db_source_desc = ""
 
-    with open(INPUT_FILE, "r", encoding="utf-8") as f:
-        raw_input = json.load(f)
+    target_db = args.sqlite_db
+    if not target_db:
+        for p in DEFAULT_SQLITE_PATHS:
+            if os.path.exists(p):
+                target_db = p
+                break
+
+    if target_db and os.path.exists(target_db):
+        raw_input = load_cases_from_sqlite(target_db)
+        if raw_input:
+            db_source_desc = f"SQLite 資料庫 ({target_db})"
+
+    if not raw_input:
+        if os.path.exists(INPUT_FILE):
+            try:
+                with open(INPUT_FILE, "r", encoding="utf-8") as f:
+                    raw_input = json.load(f)
+                db_source_desc = f"JSON 檔案 ({INPUT_FILE})"
+            except Exception as e:
+                print(f"❌ 讀取 {INPUT_FILE} 失敗: {e}")
+                return
+        else:
+            print(f"❌ 找不到 SQLite 資料庫且無 {INPUT_FILE}！")
+            return
+
+    if args.export_reports_json and raw_input:
+        with open(INPUT_FILE, "w", encoding="utf-8") as f:
+            json.dump(raw_input, f, ensure_ascii=False, indent=2)
+        print(f"📦 已同步匯出 {len(raw_input):,} 筆案件至 {INPUT_FILE}")
 
     history = {}
     if os.path.exists(DB_FILE):
@@ -256,6 +331,7 @@ def main():
     batch = eligible_items[:args.batch_size]
 
     print(f"⏰ [Batch Crawler] 執行時間：{now_str}")
+    print(f"• 資料庫來源：{db_source_desc} (總通報案件: {len(raw_input):,} 筆)")
     print(f"• 待檢查合格案件：{len(eligible_items)} 筆 (優先複查: {len(recheck_items)}, 待補齊/初查: {len(fresh_items)})")
     print(f"• 本次並發處理：{len(batch)} 筆 (並發數: {args.concurrency})")
 
