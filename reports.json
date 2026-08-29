@@ -129664,5 +129664,71 @@
     "case_id": "ef3a73d63aec989c031e7925",
     "username": "moose.5565843",
     "risk": "中"
+  },
+  "https://www.threads.net/@moose.67669541": {
+    "reported_at": "2026-08-30 04:04:22",
+    "case_id": "4564fb0b0b077fdfc976929f",
+    "username": "moose.67669541",
+    "risk": "中"
+  },
+  "https://www.threads.net/@goose.47060530": {
+    "reported_at": "2026-08-30 04:04:33",
+    "case_id": "b323c3d997dc4efb10bb1d98",
+    "username": "goose.47060530",
+    "risk": "中"
+  },
+  "https://www.threads.net/@gecko.8218021": {
+    "reported_at": "2026-08-30 04:04:39",
+    "case_id": "707fff1f1ff2f65fb32af480",
+    "username": "gecko.8218021",
+    "risk": "中"
+  },
+  "https://www.threads.net/@turtle.11408384": {
+    "reported_at": "2026-08-30 04:05:16",
+    "case_id": "e2c91f60b0c62f11b1ac1ab5",
+    "username": "turtle.11408384",
+    "risk": "中"
+  },
+  "https://www.threads.net/@turtle.8147662": {
+    "reported_at": "2026-08-30 04:05:16",
+    "case_id": "deeee7b8c874646e10e97f49",
+    "username": "turtle.8147662",
+    "risk": "中"
+  },
+  "https://www.threads.net/@unicorn.1530436": {
+    "reported_at": "2026-08-30 04:05:26",
+    "case_id": "b308c5cf17208d96f2aeff30",
+    "username": "unicorn.1530436",
+    "risk": "中"
+  },
+  "https://www.threads.net/@mahruzenld72": {
+    "reported_at": "2026-08-30 04:05:38",
+    "case_id": "9292edf96f5eff27e3a0865d",
+    "username": "mahruzenld72",
+    "risk": "中"
+  },
+  "https://www.threads.net/@llama.8324316": {
+    "reported_at": "2026-08-30 04:05:57",
+    "case_id": "6c41a82ff27b1e5ce4798231",
+    "username": "llama.8324316",
+    "risk": "中"
+  },
+  "https://www.threads.net/@panda.58944265": {
+    "reported_at": "2026-08-30 04:06:33",
+    "case_id": "aa8e4a7bf978dc6cb20f0e90",
+    "username": "panda.58944265",
+    "risk": "中"
+  },
+  "https://www.threads.net/@alligator.17634406": {
+    "reported_at": "2026-08-30 04:06:57",
+    "case_id": "be88f6a219c0e5f698d7fded",
+    "username": "alligator.17634406",
+    "risk": "中"
+  },
+  "https://www.threads.net/@hamster.71525297": {
+    "reported_at": "2026-08-30 04:07:52",
+    "case_id": "80a32a7bc981db468493e5ce",
+    "username": "hamster.71525297",
+    "risk": "中"
   }
 }
