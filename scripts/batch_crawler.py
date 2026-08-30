@@ -69,7 +69,7 @@ def load_cases_from_sqlite(db_path: str) -> dict:
         print(f"⚠️ 讀取 SQLite 資料庫失敗 ({db_path}): {e}")
     return cases
 
-RECHECK_INTERVAL_DAYS = 1   # 活躍中且已成功檢查過的案件，間隔滿 1 天複查
+RECHECK_INTERVAL_DAYS = 0.5   # 活躍中且已成功檢查過的案件，間隔滿 0.5 天複查
 
 BROWSER_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
