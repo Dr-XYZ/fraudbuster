@@ -144982,5 +144982,473 @@
     "case_id": "6a14773e594fb303212050c1",
     "username": "adhya_doll2021",
     "risk": "中"
+  },
+  "https://www.threads.net/@iguana.37358438": {
+    "reported_at": "2026-08-31 16:33:57",
+    "case_id": "b6fda7c92b5cd3f9f41c981d",
+    "username": "iguana.37358438",
+    "risk": "中"
+  },
+  "https://www.threads.net/@tobin31248": {
+    "reported_at": "2026-08-31 16:34:03",
+    "case_id": "1b18cf159dc61bd866c7943f",
+    "username": "tobin31248",
+    "risk": "中"
+  },
+  "https://www.threads.net/@thhggh68": {
+    "reported_at": "2026-08-31 16:34:04",
+    "case_id": "e0e6df71e1678d53de215da1",
+    "username": "thhggh68",
+    "risk": "中"
+  },
+  "https://www.threads.net/@aoi45136": {
+    "reported_at": "2026-08-31 16:34:17",
+    "case_id": "0f0bdae55a367262fb966fe9",
+    "username": "aoi45136",
+    "risk": "中"
+  },
+  "https://www.threads.net/@tator.161475": {
+    "reported_at": "2026-08-31 16:34:35",
+    "case_id": "3859e91e6db3c25fd7040ee7",
+    "username": "tator.161475",
+    "risk": "中"
+  },
+  "https://www.threads.net/@frankwtran": {
+    "reported_at": "2026-08-31 16:35:39",
+    "case_id": "8604819f60cf7f9cc546bc03",
+    "username": "frankwtran",
+    "risk": "中"
+  },
+  "https://www.threads.net/@miahazel325": {
+    "reported_at": "2026-08-31 16:35:39",
+    "case_id": "c2b97e251a092e324bbf1ab0",
+    "username": "miahazel325",
+    "risk": "中"
+  },
+  "https://www.threads.net/@corneel_ossart_venezia": {
+    "reported_at": "2026-08-31 16:35:39",
+    "case_id": "240f42f20135ebfd7673af91",
+    "username": "corneel_ossart_venezia",
+    "risk": "中"
+  },
+  "https://www.threads.net/@jiangyuwei245": {
+    "reported_at": "2026-08-31 16:35:45",
+    "case_id": "ca32593238152b367f879fe2",
+    "username": "jiangyuwei245",
+    "risk": "中"
+  },
+  "https://www.threads.net/@oakleywreynolds": {
+    "reported_at": "2026-08-31 16:35:45",
+    "case_id": "28d04fab01023fa730315043",
+    "username": "oakleywreynolds",
+    "risk": "中"
+  },
+  "https://www.threads.net/@reid75330": {
+    "reported_at": "2026-08-31 16:35:46",
+    "case_id": "7d7fe6d698b48e69fcf67871",
+    "username": "reid75330",
+    "risk": "中"
+  },
+  "https://www.threads.net/@sheep.8825018": {
+    "reported_at": "2026-08-31 16:36:25",
+    "case_id": "a1d02db89111e5db5cde9f96",
+    "username": "sheep.8825018",
+    "risk": "中"
+  },
+  "https://www.threads.net/@phoebe972423": {
+    "reported_at": "2026-08-31 16:36:26",
+    "case_id": "ad817124d2b73fe0748ac35e",
+    "username": "phoebe972423",
+    "risk": "中"
+  },
+  "https://www.threads.net/@hawk.76235404": {
+    "reported_at": "2026-08-31 16:36:32",
+    "case_id": "291182b9a2db0a012dc1b0c0",
+    "username": "hawk.76235404",
+    "risk": "中"
+  },
+  "https://www.threads.net/@zhangyawen8391": {
+    "reported_at": "2026-08-31 16:36:32",
+    "case_id": "e16e7eba18735a4deb0e3fcf",
+    "username": "zhangyawen8391",
+    "risk": "中"
+  },
+  "https://www.threads.net/@renee5717077": {
+    "reported_at": "2026-08-31 16:36:47",
+    "case_id": "23593fd6b87844ee601b9ba8",
+    "username": "renee5717077",
+    "risk": "中"
+  },
+  "https://www.threads.net/@sisi98433": {
+    "reported_at": "2026-08-31 16:36:48",
+    "case_id": "84b7e3343de47c45ed479709",
+    "username": "sisi98433",
+    "risk": "中"
+  },
+  "https://www.threads.net/@xiaoxiao86139": {
+    "reported_at": "2026-08-31 16:36:48",
+    "case_id": "346cd55fcf08c029b7ed7daf",
+    "username": "xiaoxiao86139",
+    "risk": "中"
+  },
+  "https://www.threads.net/@cheetah.6069275": {
+    "reported_at": "2026-08-31 16:36:54",
+    "case_id": "03f620155dabad554f613150",
+    "username": "cheetah.6069275",
+    "risk": "中"
+  },
+  "https://www.threads.net/@camel.89171256": {
+    "reported_at": "2026-08-31 16:36:55",
+    "case_id": "4e74c4a6d1078476ca96d889",
+    "username": "camel.89171256",
+    "risk": "中"
+  },
+  "https://www.threads.net/@bat.89543941": {
+    "reported_at": "2026-08-31 16:36:55",
+    "case_id": "833670abf90a7e9fd1598a1a",
+    "username": "bat.89543941",
+    "risk": "中"
+  },
+  "https://www.threads.net/@gecko.5581899": {
+    "reported_at": "2026-08-31 16:37:01",
+    "case_id": "1536cd87cac790ca4265ec10",
+    "username": "gecko.5581899",
+    "risk": "中"
+  },
+  "https://www.threads.net/@turtle.4723452": {
+    "reported_at": "2026-08-31 16:37:02",
+    "case_id": "26ef47ec5f66989576bad050",
+    "username": "turtle.4723452",
+    "risk": "中"
+  },
+  "https://www.threads.net/@_iikakoo": {
+    "reported_at": "2026-08-31 16:37:08",
+    "case_id": "bac8cde66dd97d32c29d979b",
+    "username": "_iikakoo",
+    "risk": "中"
+  },
+  "https://www.threads.net/@camel.98764037": {
+    "reported_at": "2026-08-31 16:37:12",
+    "case_id": "e23e078ceb61ab39f7ea4199",
+    "username": "camel.98764037",
+    "risk": "中"
+  },
+  "https://www.threads.net/@elephant.51967617": {
+    "reported_at": "2026-08-31 16:37:12",
+    "case_id": "dc061bf3cf7cbdf8f7b51ac2",
+    "username": "elephant.51967617",
+    "risk": "中"
+  },
+  "https://www.threads.net/@nannan26393": {
+    "reported_at": "2026-08-31 16:37:36",
+    "case_id": "eca25a0870618390cc18a6e5",
+    "username": "nannan26393",
+    "risk": "中"
+  },
+  "https://www.threads.net/@owl.1701459": {
+    "reported_at": "2026-08-31 16:37:39",
+    "case_id": "fc4d7b37d4cb1394d7ac26c6",
+    "username": "owl.1701459",
+    "risk": "中"
+  },
+  "https://www.threads.net/@llama.5918025": {
+    "reported_at": "2026-08-31 16:37:43",
+    "case_id": "fcc0c0b4e30e7c5d1117d8b9",
+    "username": "llama.5918025",
+    "risk": "中"
+  },
+  "https://www.threads.net/@alligator.33379427": {
+    "reported_at": "2026-08-31 16:39:05",
+    "case_id": "9dad91d0ed9503a874a45130",
+    "username": "alligator.33379427",
+    "risk": "中"
+  },
+  "https://www.threads.net/@ijdoasid": {
+    "reported_at": "2026-08-31 16:39:06",
+    "case_id": "2634eae36bf2d9b3e980f53f",
+    "username": "ijdoasid",
+    "risk": "中"
+  },
+  "https://www.threads.net/@rhino.3543959": {
+    "reported_at": "2026-08-31 16:39:27",
+    "case_id": "5fde4ee489c6e6c7f6e2721d",
+    "username": "rhino.3543959",
+    "risk": "中"
+  },
+  "https://www.threads.net/@bear.56985049": {
+    "reported_at": "2026-08-31 16:40:06",
+    "case_id": "84e478e2a43b44ccf03f79e9",
+    "username": "bear.56985049",
+    "risk": "中"
+  },
+  "https://www.threads.net/@beatriceperkins57": {
+    "reported_at": "2026-08-31 16:40:13",
+    "case_id": "3cefc43324011a0d1e46a540",
+    "username": "beatriceperkins57",
+    "risk": "中"
+  },
+  "https://www.threads.net/@kyriemcintyre24": {
+    "reported_at": "2026-08-31 16:40:13",
+    "case_id": "d0b31c7335dac0c80a678107",
+    "username": "kyriemcintyre24",
+    "risk": "中"
+  },
+  "https://www.threads.net/@brockbarrera358": {
+    "reported_at": "2026-08-31 16:40:13",
+    "case_id": "5f154fb000dad2c840283135",
+    "username": "brockbarrera358",
+    "risk": "中"
+  },
+  "https://www.threads.net/@fhbnbb1": {
+    "reported_at": "2026-08-31 16:40:20",
+    "case_id": "d2bab6ac84882107b63f672d",
+    "username": "fhbnbb1",
+    "risk": "中"
+  },
+  "https://www.threads.net/@hamster.94496639": {
+    "reported_at": "2026-08-31 16:40:26",
+    "case_id": "1b057a26d4e875a1ed25cfe2",
+    "username": "hamster.94496639",
+    "risk": "中"
+  },
+  "https://www.threads.net/@kangaroo.2729777": {
+    "reported_at": "2026-08-31 16:41:47",
+    "case_id": "6d2c9a071ab9f250f5397ddf",
+    "username": "kangaroo.2729777",
+    "risk": "中"
+  },
+  "https://www.threads.net/@deer.1313014": {
+    "reported_at": "2026-08-31 16:41:53",
+    "case_id": "02a9acb72ca279f988dd8074",
+    "username": "deer.1313014",
+    "risk": "中"
+  },
+  "https://www.threads.net/@hamster.889553": {
+    "reported_at": "2026-08-31 16:42:09",
+    "case_id": "4ab22b251276012f3ab745c1",
+    "username": "hamster.889553",
+    "risk": "中"
+  },
+  "https://www.threads.net/@alligator.5108467": {
+    "reported_at": "2026-08-31 16:42:10",
+    "case_id": "264d29929ca3d571ce175fda",
+    "username": "alligator.5108467",
+    "risk": "中"
+  },
+  "https://www.threads.net/@squirrel.1585222": {
+    "reported_at": "2026-08-31 16:42:10",
+    "case_id": "0e2757e7f94426208c297494",
+    "username": "squirrel.1585222",
+    "risk": "中"
+  },
+  "https://www.threads.net/@dolphin.3832845": {
+    "reported_at": "2026-08-31 16:42:16",
+    "case_id": "c5fe905c3ad0851b2071f5c1",
+    "username": "dolphin.3832845",
+    "risk": "中"
+  },
+  "https://www.threads.net/@elephant.8250747": {
+    "reported_at": "2026-08-31 16:42:16",
+    "case_id": "28a0fc3255616ac8fb2d3a8f",
+    "username": "elephant.8250747",
+    "risk": "中"
+  },
+  "https://www.threads.net/@platypus.8447185": {
+    "reported_at": "2026-08-31 16:42:16",
+    "case_id": "ba0be192c4f5234793ffc766",
+    "username": "platypus.8447185",
+    "risk": "中"
+  },
+  "https://www.threads.net/@gazelle.3879398": {
+    "reported_at": "2026-08-31 16:42:22",
+    "case_id": "4c612a0554dbc70dc43ed442",
+    "username": "gazelle.3879398",
+    "risk": "中"
+  },
+  "https://www.threads.net/@quail.6586750": {
+    "reported_at": "2026-08-31 16:42:22",
+    "case_id": "efe23633dfca1d0ddd281760",
+    "username": "quail.6586750",
+    "risk": "中"
+  },
+  "https://www.threads.net/@bat.52014213": {
+    "reported_at": "2026-08-31 16:42:23",
+    "case_id": "a5898fa97d430277815adcb6",
+    "username": "bat.52014213",
+    "risk": "中"
+  },
+  "https://www.threads.net/@reindeer.6736391": {
+    "reported_at": "2026-08-31 16:42:28",
+    "case_id": "15eccad08a4a5af3f28d7e0c",
+    "username": "reindeer.6736391",
+    "risk": "中"
+  },
+  "https://www.threads.net/@lion.35576259": {
+    "reported_at": "2026-08-31 16:42:28",
+    "case_id": "f4bb822da1c71b4d872f0de2",
+    "username": "lion.35576259",
+    "risk": "中"
+  },
+  "https://www.threads.net/@gecko.66633918": {
+    "reported_at": "2026-08-31 16:42:28",
+    "case_id": "f61595e45eff303b6fc555fb",
+    "username": "gecko.66633918",
+    "risk": "中"
+  },
+  "https://www.threads.net/@rabbit.96485866": {
+    "reported_at": "2026-08-31 16:42:32",
+    "case_id": "c2c6dcd262be247917de6b64",
+    "username": "rabbit.96485866",
+    "risk": "中"
+  },
+  "https://www.threads.net/@opxwvvanw": {
+    "reported_at": "2026-08-31 16:42:33",
+    "case_id": "2aa59034ca9eecb6e461eecb",
+    "username": "opxwvvanw",
+    "risk": "中"
+  },
+  "https://www.threads.net/@cubbjd4": {
+    "reported_at": "2026-08-31 16:43:30",
+    "case_id": "2378fac9a796dd7b7638e215",
+    "username": "cubbjd4",
+    "risk": "中"
+  },
+  "https://www.threads.net/@8.67446": {
+    "reported_at": "2026-08-31 16:45:12",
+    "case_id": "063f60b8697ba6001291658b",
+    "username": "8.67446",
+    "risk": "中"
+  },
+  "https://www.threads.net/@gters632": {
+    "reported_at": "2026-08-31 16:46:01",
+    "case_id": "d25c53ba3d241dc109f24625",
+    "username": "gters632",
+    "risk": "中"
+  },
+  "https://www.threads.net/@ur5.gd": {
+    "reported_at": "2026-08-31 16:46:07",
+    "case_id": "4f493607e89db38fb99769fc",
+    "username": "ur5.gd",
+    "risk": "中"
+  },
+  "https://www.threads.net/@j7j2386": {
+    "reported_at": "2026-08-31 16:46:21",
+    "case_id": "1730cbba017ac6e33b36c260",
+    "username": "j7j2386",
+    "risk": "中"
+  },
+  "https://www.threads.net/@riju.dada": {
+    "reported_at": "2026-08-31 16:46:27",
+    "case_id": "3ff107115dfc3ad80e941f5a",
+    "username": "riju.dada",
+    "risk": "中"
+  },
+  "https://www.threads.net/@dfrt63d": {
+    "reported_at": "2026-08-31 16:46:27",
+    "case_id": "a9b9a9833d6eb194bae3683f",
+    "username": "dfrt63d",
+    "risk": "中"
+  },
+  "https://www.threads.net/@es44_f": {
+    "reported_at": "2026-08-31 16:46:27",
+    "case_id": "4ac68a4710fd6d9a7f47d3c6",
+    "username": "es44_f",
+    "risk": "中"
+  },
+  "https://www.threads.net/@sdfs28503": {
+    "reported_at": "2026-08-31 16:46:33",
+    "case_id": "d9fd05a213b7f6743977852e",
+    "username": "sdfs28503",
+    "risk": "中"
+  },
+  "https://www.threads.net/@vikasazevedo1050": {
+    "reported_at": "2026-08-31 16:46:43",
+    "case_id": "9daab7fd3b0fa0eeafa3c3cb",
+    "username": "vikasazevedo1050",
+    "risk": "中"
+  },
+  "https://www.threads.net/@rajstar4625": {
+    "reported_at": "2026-08-31 16:46:49",
+    "case_id": "58af5f9773e2d62913915527",
+    "username": "rajstar4625",
+    "risk": "中"
+  },
+  "https://www.threads.net/@qzc_2005": {
+    "reported_at": "2026-08-31 16:46:50",
+    "case_id": "5396d0ff3cac8ba097a90d07",
+    "username": "qzc_2005",
+    "risk": "中"
+  },
+  "https://www.threads.net/@v4v790": {
+    "reported_at": "2026-08-31 16:46:56",
+    "case_id": "9cf6998557bd03dbb6ee798d",
+    "username": "v4v790",
+    "risk": "中"
+  },
+  "https://www.threads.net/@efc6304": {
+    "reported_at": "2026-08-31 16:47:26",
+    "case_id": "f5a4b8a19cf84d41a0dc54c0",
+    "username": "efc6304",
+    "risk": "中"
+  },
+  "https://www.threads.net/@rr66_.1": {
+    "reported_at": "2026-08-31 16:47:26",
+    "case_id": "45e7dcc00cb0f1aa86ab0c3e",
+    "username": "rr66_.1",
+    "risk": "高"
+  },
+  "https://www.threads.net/@wangdafu369": {
+    "reported_at": "2026-08-31 16:47:26",
+    "case_id": "5352dfb9fa6f4a6716966e70",
+    "username": "wangdafu369",
+    "risk": "中"
+  },
+  "https://www.threads.net/@iguana.6501462": {
+    "reported_at": "2026-08-31 16:47:33",
+    "case_id": "bc40c671ad19e061b0344b7f",
+    "username": "iguana.6501462",
+    "risk": "中"
+  },
+  "https://www.threads.net/@congvchicun": {
+    "reported_at": "2026-08-31 16:47:33",
+    "case_id": "c4b9de0329f934b068a0e3fa",
+    "username": "congvchicun",
+    "risk": "中"
+  },
+  "https://www.threads.net/@wolf.6562803": {
+    "reported_at": "2026-08-31 16:47:33",
+    "case_id": "33fea37a208dea7b365b8216",
+    "username": "wolf.6562803",
+    "risk": "中"
+  },
+  "https://www.threads.net/@lion.28796236": {
+    "reported_at": "2026-08-31 16:47:39",
+    "case_id": "90f57f06889695c4e5c29752",
+    "username": "lion.28796236",
+    "risk": "中"
+  },
+  "https://www.threads.net/@karlysiarobertia": {
+    "reported_at": "2026-08-31 16:49:08",
+    "case_id": "6a59fdcb0a2e15810029a9a0",
+    "username": "karlysiarobertia",
+    "risk": "中"
+  },
+  "https://www.threads.net/@qmtgzef6": {
+    "reported_at": "2026-08-31 16:49:23",
+    "case_id": "54713a2531bd1bd4411ce888",
+    "username": "qmtgzef6",
+    "risk": "高"
+  },
+  "https://www.threads.net/@noor_huda_fatima_": {
+    "reported_at": "2026-08-31 16:49:48",
+    "case_id": "7a036d68cc2776ec0415b49f",
+    "username": "noor_huda_fatima_",
+    "risk": "中"
+  },
+  "https://www.threads.net/@gyyy49358": {
+    "reported_at": "2026-08-31 16:49:55",
+    "case_id": "6a79576d4dfbff885668fabb",
+    "username": "gyyy49358",
+    "risk": "中"
   }
 }
